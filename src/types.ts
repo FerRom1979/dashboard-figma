@@ -3,3 +3,10 @@ export interface IPropsCard {
     people: string;
     logo: any;
 }
+export interface IPropsGraphic {
+    title: string;
+    legend: string;
+    dataLabel: any;
+    dataSet: any;
+    borderColor: string;
+}
