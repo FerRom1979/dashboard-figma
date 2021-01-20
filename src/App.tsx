@@ -1,9 +1,12 @@
 import React from 'react';
+import Dasboard from './components/dashboard/index';
+import { GlobalStyle } from './indexStyle';
 
 function App() {
     return (
         <div className="App">
-            <h1>ok</h1>
+            <GlobalStyle />
+            <Dasboard />
         </div>
     );
 }
