@@ -21,7 +21,7 @@ const Dashboard = () => {
         legend = 'Income in current month',
         borderColor = '#336cfb',
         dataLabeltwo = [
-            '25 July',
+            '24 July',
             '26 July',
             '27 July',
             '28 July',
@@ -33,7 +33,6 @@ const Dashboard = () => {
         titletwo = '$25,000',
         legendtwo = 'Income in current week',
         borderColortwo = '#fac032';
-
     return (
         <DivContainer>
             <Navigation />
