@@ -32,6 +32,10 @@ const SurveyGraph = () => {
     };
     const options = {
         maintainAspesctRatio: false,
+        title: {
+            display: true,
+            text: 'hospital',
+        },
     };
     return (
         <DivContainer>
