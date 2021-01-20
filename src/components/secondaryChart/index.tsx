@@ -1,39 +1,25 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import * as style from './style';
 import { Line } from 'react-chartjs-2';
+import { IPropsGraphic } from '../../types';
+import * as style from './style';
 
-const SurveyGraph = () => {
+const SecondaryCrart: React.FC<IPropsGraphic> = ({
+    title,
+    legend,
+    dataLabel,
+    dataSet,
+    borderColor,
+}) => {
     const { DivContainer } = style;
     const data = {
-        labels: [
-            '2020-1',
-            '2020-2',
-            '2020-3',
-            '2020-4',
-            '2020-5',
-            '2020-6',
-            '2020-7',
-            '2020-8',
-            '2020-9',
-            '2020-10',
-            '2020-11',
-            '2020-12',
-        ],
+        labels: dataLabel,
         datasets: [
             {
-                label: 'Patients 2019',
-                background:
-                    'linear-gradient(180deg, rgba(51, 108, 251, 0.2) 0%, rgba(51, 108, 251, 0.02) 100%)',
-                borderColor: '#336cfb',
+                label: `${legend}`,
+                borderColor: `${borderColor}`,
                 borderWidht: 1,
-                data: [150, 100, 200, 111, 180, 140, 180, 170, 155, 190, 220, 240],
-            },
-            {
-                label: 'Patients 2020',
-                borderColor: '#fac032',
-                borderWidht: 1,
-                fill: false,
-                data: [50, 100, 150, 171, 160, 130, 170, 180, 165, 110, 190, 210],
+                data: dataSet,
             },
         ],
     };
@@ -58,7 +44,7 @@ const SurveyGraph = () => {
 
         title: {
             display: true,
-            text: 'Hospital Survey',
+            text: `${title}`,
             fontFamily: 'Lato',
             fontWeight: 'bold',
             fontSize: 20,
@@ -69,18 +55,22 @@ const SurveyGraph = () => {
         legend: {
             align: 'end',
             fontFamily: 'Lato',
-            fontWeight: 'bold',
+            fontWeight: 700,
+            fontStyle: 'normal',
+            padding: {
+                rigth: 40,
+            },
             fontSize: 12,
             lineHeight: 16,
             color: '#a0a4a8',
             labels: {
-                boxWidth: 40,
-                padding: 10,
+                boxWidth: 0,
+                paddingRigth: 20,
                 boxHeinght: 1,
             },
         },
         tooltips: {
-            titleAlign: 'rigth',
+            titleAlign: 'left',
         },
         elements: {
             line: {
@@ -88,18 +78,13 @@ const SurveyGraph = () => {
                 padding: 10,
                 fill: false,
             },
-            point: {
-                cursor: 'pointer',
-            },
         },
     };
     return (
         <DivContainer>
-            <div style={{ height: '374px' }}>
-                <Line data={data} options={options} />
-            </div>
+            <Line data={data} options={options} />
         </DivContainer>
     );
 };
 
-export default SurveyGraph;
+export default SecondaryCrart;
