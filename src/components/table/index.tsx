@@ -132,7 +132,6 @@ const Table = () => {
                     sorting: true,
                     headerStyle: {
                         background: '#E8E8E8',
-                        /* opacity: 0.2, */
                         color: ' #25282B',
                         fontFamily: 'Lato',
                         fontStyle: 'normal',
