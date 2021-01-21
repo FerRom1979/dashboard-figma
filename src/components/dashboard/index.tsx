@@ -4,6 +4,7 @@ import Header from '../header/index';
 import Card from '../card/index';
 import SurveyGraph from '../surveyGraph/index';
 import SecondaryChatr from '../secondaryChart/index';
+import Table from '../table/index';
 import * as style from './style';
 
 import {
@@ -21,7 +22,7 @@ const Dashboard = () => {
         legend = 'Income in current month',
         borderColor = '#336cfb',
         dataLabeltwo = [
-            '24 July',
+            '25 July',
             '26 July',
             '27 July',
             '28 July',
@@ -29,7 +30,7 @@ const Dashboard = () => {
             '30 July',
             '31 July',
         ],
-        dataSettwo = [62000, 38000, 59000, 78000, 20000, 53000],
+        dataSettwo = [62000, 38000, 59000, 41000, 78000, 20000, 53000],
         titletwo = '$25,000',
         legendtwo = 'Income in current week',
         borderColortwo = '#fac032';
@@ -37,18 +38,17 @@ const Dashboard = () => {
         <DivContainer>
             <Navigation />
             <div>
-                <div>
-                    <Header />
-                </div>
+                <Header />
+
                 <DivCard>
                     <Card title={'Appointments'} people={'213'} logo={faBriefcaseMedical} />
                     <Card title={'New Patients'} people={'104'} logo={faUserInjured} />
                     <Card title={'Operatios'} people={'24'} logo={faProcedures} />
                     <Card title={'Hospital Earnings'} people={'$12,74'} logo={faUniversity} />
                 </DivCard>
-                <div>
-                    <SurveyGraph />
-                </div>
+
+                <SurveyGraph />
+
                 <DivSecondaryChart>
                     <SecondaryChatr
                         dataLabel={dataLabel}
@@ -65,6 +65,8 @@ const Dashboard = () => {
                         borderColor={borderColortwo}
                     />
                 </DivSecondaryChart>
+
+                <Table />
             </div>
         </DivContainer>
     );

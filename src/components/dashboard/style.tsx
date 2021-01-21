@@ -7,8 +7,17 @@ export const DivContainer = styled.div`
     align-self: stretch;
     background-color: #f6f8fb;
 `;
+export const DivContainerMain = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    background-color: #f6f8fb;
+`;
 export const DivCard = styled.div`
     width: 1184px;
+    min-width: 1184px;
+    min-height: 88px;
     height: 88px;
     display: flex;
     justify-content: space-around;
@@ -17,7 +26,9 @@ export const DivCard = styled.div`
 `;
 export const DivSecondaryChart = styled.div`
     width: 1184px;
-    height: 88px;
+    min-width: 1184px;
+    min-height: 286px;
+    height: 286px;
+    margin-top: 38px;
     display: flex;
-    /* justify-content: space-around; */
 `;
