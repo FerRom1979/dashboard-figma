@@ -2,16 +2,21 @@ import styled from 'styled-components';
 
 export const DivContainer = styled.div`
     width: 1184px;
+    min-width: 1184px;
     height: 88px;
+    min-height: 88px;
     display: flex;
     align-items: center;
     background-color: #f6f8fb;
 `;
 export const InputSearch = styled.input`
+    min-width: 350px;
+    min-height: 40px;
     width: 350px;
     height: 40px;
     margin-left: 36px;
     background: #ffffff;
+    border: none;
     border-radius: 100px;
     font-size: 13px;
 `;

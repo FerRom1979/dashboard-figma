@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const DivContainer = styled.div`
+    min-width: 255px;
     width: 255px;
     height: 88px;
     background: #ffffff;
     display: flex;
     justify-content: start;
     border-radius: 8px;
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
 `;
 export const PCard = styled.p`
     margin-top: 20px;

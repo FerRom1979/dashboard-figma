@@ -48,8 +48,8 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
             fontFamily: 'Lato',
             fontWeight: 'bold',
             fontSize: 20,
-            color: '#25282b',
-            aling: 'start',
+            color: 'black',
+            textAling: 'left',
         },
 
         legend: {
