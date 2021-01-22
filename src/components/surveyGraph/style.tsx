@@ -12,7 +12,5 @@ export const DivContainer = styled.div`
         min-width: 1060px;
         margin-left: 50px;
         width: 1060px;
-        min-height: 350px;
-        height: 350px;
     }
 `;
