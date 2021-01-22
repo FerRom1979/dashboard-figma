@@ -1,6 +1,8 @@
 import React from 'react';
 import * as style from './style';
 import Logo from '../../assets/img/logo.jpg';
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faChartPie,
@@ -10,6 +12,7 @@ import {
     faWheelchair,
     faCreditCard,
     faQuestionCircle,
+    faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 const Navigation = () => {
     const {
@@ -24,6 +27,9 @@ const Navigation = () => {
         LabelList,
         SpanListNav,
         SpanListDash,
+        Hr,
+        DivNoneList,
+        LabelNoneIcon,
     } = style;
 
     return (
@@ -37,14 +43,18 @@ const Navigation = () => {
                     <SpanListDash>
                         <FontAwesomeIcon icon={faChartPie} />
                     </SpanListDash>
-                    <Label>Dashboard</Label>
+                    <Link to="/dashboard">
+                        <Label>Dashboard</Label>
+                    </Link>
                 </Divlist>
             </DivNavDashboard>
             <DivListNav>
                 <SpanListNav>
                     <FontAwesomeIcon icon={faStethoscope} />
                 </SpanListNav>
-                <LabelList>Appointments</LabelList>
+                <Link to="/basicTable">
+                    <LabelList>Appointments</LabelList>
+                </Link>
             </DivListNav>
             <DivListNav>
                 <SpanListNav>
@@ -70,7 +80,16 @@ const Navigation = () => {
                 </SpanListNav>
                 <LabelList>Payments</LabelList>
             </DivListNav>
-            <hr style={{ color: '#e8e8e8' }} />
+            <DivNoneList>
+                <DivListNav>
+                    <LabelList>Service pages</LabelList>
+                    <LabelNoneIcon>
+                        <FontAwesomeIcon icon={faChevronDown} />
+                    </LabelNoneIcon>
+                </DivListNav>
+            </DivNoneList>
+
+            <Hr />
             <DivListNav>
                 <SpanListNav>
                     <FontAwesomeIcon icon={faQuestionCircle} />

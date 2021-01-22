@@ -4,21 +4,21 @@ import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
 import * as style from './style';
 
 const Header = () => {
-    const { DivContainer, InputSearch, InputDiv, SpanBell, FaceIcon } = style;
+    const { DivContainer, InputSearch, InputDiv, SpanBell, FaceIcon, DivUser } = style;
     return (
         <DivContainer>
             <InputDiv>
                 <InputSearch type="text" placeholder="&#128269;    Search" />
             </InputDiv>
 
-            <div>
+            <DivUser>
                 <SpanBell>
                     <FontAwesomeIcon icon={faBell} />
                 </SpanBell>
                 <FaceIcon>
                     <FontAwesomeIcon icon={faUser} />
                 </FaceIcon>
-            </div>
+            </DivUser>
         </DivContainer>
     );
 };

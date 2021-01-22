@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+const desktop = '@media(max-width: 1168px)';
 
 export const DivContainer = styled.div`
     width: 1184px;
@@ -8,6 +9,10 @@ export const DivContainer = styled.div`
     display: flex;
     align-items: center;
     background-color: #f6f8fb;
+    ${desktop} {
+        width: auto;
+        min-width: 829px;
+    }
 `;
 export const InputSearch = styled.input`
     min-width: 350px;
@@ -24,6 +29,9 @@ export const InputSearch = styled.input`
     border-radius: 100px;
     font-size: 13px;
     padding-left: 16px;
+    ${desktop} {
+        margin-left: 16px;
+    }
 `;
 export const InputDiv = styled.div`
     position: relative;
@@ -45,4 +53,12 @@ export const SpanBell = styled.span`
 export const FaceIcon = styled.span`
     font-size: 40px;
     margin-right: 24px;
+`;
+export const DivAvatar = styled.div`
+    margin-right: 0;
+`;
+export const DivUser = styled.div`
+    ${desktop} {
+        margin-right: 15px;
+    }
 `;

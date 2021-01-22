@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+const desktop = '@media(max-width: 1168px)';
 
 export const DivContainer = styled.div`
     min-width: 255px;
@@ -9,6 +10,11 @@ export const DivContainer = styled.div`
     justify-content: start;
     border-radius: 8px;
     box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    ${desktop} {
+        min-width: 230px;
+
+        width: 230px;
+    }
 `;
 export const PCard = styled.p`
     margin-top: 20px;
