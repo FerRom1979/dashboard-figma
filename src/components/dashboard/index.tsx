@@ -5,6 +5,7 @@ import Card from '../card/index';
 import SurveyGraph from '../surveyGraph/index';
 import SecondaryChatr from '../secondaryChart/index';
 import BasicTable from '../table/basicTable';
+
 import * as style from './style';
 
 import {
@@ -15,7 +16,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Dashboard = () => {
-    const { DivContainer, DivCard, DivSecondaryChart } = style;
+    const { DivContainer, DivCard, DivSecondaryChart, DivNav, DivHeader } = style;
     const dataLabel = ['1 July', '8 July', '16 July', '24 July', '31 July'],
         dataSet = [60000, 70000, 35000, 63000, 42000],
         title = '$100,000',
@@ -36,9 +37,14 @@ const Dashboard = () => {
         borderColortwo = '#fac032';
     return (
         <DivContainer>
-            <Navigation />
+            <DivNav>
+                <Navigation />
+            </DivNav>
+
             <div>
-                <Header />
+                <DivHeader>
+                    <Header />
+                </DivHeader>
 
                 <DivCard>
                     <Card title={'Appointments'} people={'213'} logo={faBriefcaseMedical} />

@@ -1,10 +1,16 @@
 import styled from 'styled-components';
+const desktop = '@media(max-width: 1168px)';
 
 export const DivContainer = styled.div`
     width: 256px;
     height: 1382px;
-
     background-color: #ffffff;
+    ${desktop} {
+        display: flex;
+        flex-direction: row;
+        height: 48px;
+        background-color: #f6f8fb;
+    }
 `;
 export const LogoDiv = styled.div`
     width: 142px;
@@ -14,6 +20,9 @@ export const LogoDiv = styled.div`
     color: #336cfb;
     margin-bottom: 0;
     padding-bottom: 0;
+    ${desktop} {
+        display: none;
+    }
 `;
 export const ImgLogo = styled.img`
     width: 30px;
@@ -26,6 +35,11 @@ export const DivNavDashboard = styled.div`
     height: 88px;
     margin-top: 32px;
     margin-bottom: 2px;
+    ${desktop} {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+    }
 `;
 export const SubTitleNav = styled.h3`
     height: 20px;
@@ -40,11 +54,32 @@ export const SubTitleNav = styled.h3`
     letter-spacing: 0.1px;
     color: #a0a4a8;
     margin-bottom: 0;
+    padding-bottom: 0;
+    ${desktop} {
+        display: none;
+    }
 `;
 export const Divlist = styled.div`
     display: flex;
     height: 20px;
     margin-left: 25px;
+    ${desktop} {
+        display: flex;
+        flex-direction: row;
+        height: 48px;
+    }
+`;
+export const DivNoneList = styled.div`
+    display: none;
+    ${desktop} {
+        display: block;
+        width: 140px;
+    }
+`;
+export const LabelNoneIcon = styled.span`
+    margin-top: 10px;
+    margin-left: 7.2px;
+    color: '#52575c';
 `;
 export const Label = styled.h4`
     margin-left: 13px;
@@ -59,6 +94,13 @@ export const Label = styled.h4`
     letter-spacing: 0.1px;
     margin-bottom: 0;
     color: #336cfb;
+    ${desktop} {
+        height: 48px;
+        margin-top: 15.62px;
+        width: auto;
+        margin-left: 140px;
+        color: #52575c;
+    }
 `;
 export const DivListNav = styled.div`
     display: flex;
@@ -78,16 +120,31 @@ export const LabelList = styled.h4`
     line-height: 20px;
     letter-spacing: 0.1px;
     color: #52575c;
+    ${desktop} {
+        margin-left: 32px;
+    }
 `;
 export const SpanListNav = styled.span`
     color: #dbdde0;
     width: 13.28px;
     height: 16px;
     margin-left: 24px;
+    ${desktop} {
+        display: none;
+    }
 `;
 export const SpanListDash = styled.span`
     color: #336cfb;
     width: 14px;
     height: 13.3px;
     margin-top: 20px;
+    ${desktop} {
+        display: none;
+    }
+`;
+export const Hr = styled.hr`
+    color: #e8e8e8;
+    ${desktop} {
+        display: none;
+    }
 `;

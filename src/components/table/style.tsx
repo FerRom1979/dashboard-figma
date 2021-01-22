@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+const desktop = '@media(max-width: 1168px)';
 export const DivContainer = styled.div`
     min-width: 1110px;
     max-height: 410px;
@@ -10,6 +10,11 @@ export const DivContainer = styled.div`
     margin-left: 36px;
     box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
     border-radius: 8px;
+    ${desktop} {
+        width: 1060px;
+        min-width: 1060px;
+        margin-left: 50px;
+    }
 `;
 export const SpanIcon = styled.span`
     font-size: 32px;
@@ -24,6 +29,10 @@ export const Table = styled.table`
     width: 100%;
     border-collapse: collapse;
     border: none;
+    ${desktop} {
+        width: 1060px;
+        min-width: 1060px;
+    }
 `;
 export const Title = styled.h1`
     font-family: Lato;

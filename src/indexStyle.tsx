@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-
+import styled from 'styled-components';
+const desktop = '@media(min-width: 1168px)';
+const desktopResponsive = '@media(max-width: 1168px)';
 export const GlobalStyle = createGlobalStyle`
 body{
   background:#f6f8fb;
@@ -11,4 +13,14 @@ body{
   width: 100%;
   height: 100vh;
 }
+`;
+export const DivResponsive = styled.div`
+    ${desktop} {
+        display: none;
+    }
+`;
+export const DivDashboard = styled.div`
+    ${desktopResponsive} {
+        display: none;
+    }
 `;
