@@ -15,7 +15,7 @@ export const PCard = styled.p`
     margin-bottom: 5px;
     font-family: Lato;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
     line-height: 20px;
     letter-spacing: o.1px;

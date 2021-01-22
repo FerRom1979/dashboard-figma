@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <DivContainer>
             <InputDiv>
-                <InputSearch type="text" placeholder="&#128270; Search" />
+                <InputSearch type="text" placeholder="&#128269;    Search" />
             </InputDiv>
 
             <div>
