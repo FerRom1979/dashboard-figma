@@ -26,7 +26,7 @@ const BasicTable = () => {
                         id: 'imgen',
                         header: 'Name',
                         Cell: () => (
-                            <div style={{ width: '50px' }}>
+                            <div style={{ width: '50px', display: 'flex', float: 'right' }}>
                                 <img src={foto} style={{ width: '50px' }} />
                             </div>
                         ),
