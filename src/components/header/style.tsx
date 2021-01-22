@@ -15,10 +15,15 @@ export const InputSearch = styled.input`
     width: 350px;
     height: 40px;
     margin-left: 36px;
+    color: #a0a4a8;
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
     background: #ffffff;
     border: none;
     border-radius: 100px;
     font-size: 13px;
+    padding-left: 16px;
 `;
 export const InputDiv = styled.div`
     position: relative;

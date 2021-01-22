@@ -12,6 +12,8 @@ export const LogoDiv = styled.div`
     margin-top: 24px;
     margin-left: 24px;
     color: #336cfb;
+    margin-bottom: 0;
+    padding-bottom: 0;
 `;
 export const ImgLogo = styled.img`
     width: 30px;
@@ -23,12 +25,13 @@ export const DivNavDashboard = styled.div`
     width: 256px;
     height: 88px;
     margin-top: 32px;
+    margin-bottom: 2px;
 `;
 export const SubTitleNav = styled.h3`
     height: 20px;
     margin-left: 24px;
     margin-right: 24px;
-    margin-top: 14px;
+    padding-top: 20px;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -40,7 +43,7 @@ export const SubTitleNav = styled.h3`
 `;
 export const Divlist = styled.div`
     display: flex;
-    align-items: center;
+    height: 20px;
     margin-left: 25px;
 `;
 export const Label = styled.h4`
@@ -53,8 +56,8 @@ export const Label = styled.h4`
     font-weight: bold;
     font-size: 14px;
     margin-top: 20px;
-
     letter-spacing: 0.1px;
+    margin-bottom: 0;
     color: #336cfb;
 `;
 export const DivListNav = styled.div`
@@ -86,4 +89,5 @@ export const SpanListDash = styled.span`
     color: #336cfb;
     width: 14px;
     height: 13.3px;
+    margin-top: 20px;
 `;

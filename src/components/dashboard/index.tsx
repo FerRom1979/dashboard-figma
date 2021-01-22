@@ -4,7 +4,7 @@ import Header from '../header/index';
 import Card from '../card/index';
 import SurveyGraph from '../surveyGraph/index';
 import SecondaryChatr from '../secondaryChart/index';
-import Table from '../table/index';
+import BasicTable from '../table/basicTable';
 import * as style from './style';
 
 import {
@@ -66,7 +66,7 @@ const Dashboard = () => {
                     />
                 </DivSecondaryChart>
 
-                <Table />
+                <BasicTable />
             </div>
         </DivContainer>
     );
