@@ -16,8 +16,8 @@ export const DivContainer = styled.div`
         min-width: 829px;
     }
     ${table} {
-        width: 578px;
-        min-width: 578px;
+        width: 768px;
+        min-width: 768px;
     }
     ${movil} {
         width: 380px;
@@ -89,7 +89,7 @@ export const DivUser = styled.div`
     }
     ${table} {
         margin-left: 90px;
-        margin-right: 0px;
+        margin-right: 10px;
     }
     ${movil} {
         width: 100%;
