@@ -14,7 +14,7 @@ export const DivMenu = styled.div`
 `;
 export const DivNav = styled.div`
     position: fixed;
-    top: 21%;
+    top: 22%;
     left: 6%;
     transform: translate(-18%, -18%);
     width: 100px;
