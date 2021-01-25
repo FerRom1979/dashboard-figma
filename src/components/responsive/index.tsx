@@ -3,12 +3,12 @@ import React from 'react';
 import Logo from '../../assets/img/logo.jpg';
 import Header from '../header/index';
 import Navigation from '../navigation/index';
-import MenuHamburger from '../menuHamburguer/index';
+import MenuBurger from '../menuBurger/index';
 
 import * as style from './style';
 
 const index = () => {
-    const { ImgLogo, LogoDiv, DivHeader, PLogo, NavDiv, DivWrapper, DivHamburguer } = style;
+    const { ImgLogo, LogoDiv, DivHeader, PLogo, NavDiv, DivWrapper, DivBurger } = style;
     return (
         <DivWrapper>
             <DivHeader>
@@ -17,9 +17,9 @@ const index = () => {
                 </LogoDiv>
                 <Header />
             </DivHeader>
-            <DivHamburguer>
-                <MenuHamburger />
-            </DivHamburguer>
+            <DivBurger>
+                <MenuBurger />
+            </DivBurger>
             <NavDiv>
                 <Navigation />
             </NavDiv>
