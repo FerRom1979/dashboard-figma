@@ -54,7 +54,7 @@ export const NavDiv = styled.div`
         display: none;
     }
 `;
-export const DivHamburguer = styled.div`
+export const DivBurger = styled.div`
     display: none;
     ${tableVertical} {
         display: block;
