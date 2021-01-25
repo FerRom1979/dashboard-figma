@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
+const table = '@media(max-width: 768px)';
+const tableVertical = '@media(max-width: 600px)';
 
 export const DivContainer = styled.div`
     width: 100%;
@@ -42,6 +44,19 @@ export const DivCard = styled.div`
         min-width: 1100px;
         margin-left: 30px;
     }
+    ${table} {
+        width: 768px;
+        min-width: 768px;
+        margin: auto;
+        flex-wrap: wrap;
+        height: 236px;
+    }
+    ${tableVertical} {
+        width: 300px;
+        min-width: 300px;
+        flex-direction: row;
+        height: 500px;
+    }
 `;
 export const DivSecondaryChart = styled.div`
     width: 1184px;
@@ -55,5 +70,18 @@ export const DivSecondaryChart = styled.div`
         min-width: 1060px;
         margin-left: 50px;
         justify-content: space-between;
+    }
+    ${table} {
+        width: 768px;
+        min-width: 768px;
+        flex-direction: column;
+        margin-top: 10px;
+        align-content: center;
+        margin-left: 0px;
+        min-height: 600px;
+    }
+    ${tableVertical} {
+        width: 600px;
+        min-width: 600px;
     }
 `;

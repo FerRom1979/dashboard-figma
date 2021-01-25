@@ -37,7 +37,7 @@ const BasicTable = () => {
                         id: 'edit',
                         header: '',
                         Cell: () => (
-                            <div style={{ width: '10px' }}>
+                            <div>
                                 <span style={{ color: '#a0a4a8' }}>
                                     <FontAwesomeIcon icon={faPen} />
                                 </span>
@@ -48,7 +48,7 @@ const BasicTable = () => {
                         id: 'delete',
                         header: '',
                         Cell: () => (
-                            <div style={{ width: '10px' }}>
+                            <div>
                                 <span style={{ color: '#ff6760' }}>
                                     <FontAwesomeIcon icon={faTrashAlt} />
                                 </span>

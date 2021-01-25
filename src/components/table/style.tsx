@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
+const table = '@media(max-width: 768px)';
+const tableVertical = '@media(max-width: 600px)';
 export const DivContainer = styled.div`
     min-width: 1110px;
     max-height: 410px;
@@ -14,6 +16,16 @@ export const DivContainer = styled.div`
         width: 1060px;
         min-width: 1060px;
         margin-left: 50px;
+    }
+    ${table} {
+        width: 740px;
+        min-width: 740px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    ${tableVertical} {
+        display: none;
     }
 `;
 export const SpanIcon = styled.span`
@@ -33,6 +45,14 @@ export const Table = styled.table`
         width: 1060px;
         min-width: 1060px;
     }
+    ${table} {
+        width: 740px;
+        min-width: 740px;
+    }
+    ${tableVertical} {
+        width: 560px;
+        min-width: 560px;
+    }
 `;
 export const Title = styled.h1`
     font-family: Lato;
@@ -47,6 +67,9 @@ export const Title = styled.h1`
     letter-spacing: 0.2px;
     height: 43px;
     padding-top: 24px;
+    ${table} {
+        font-size: 16px;
+    }
 `;
 export const Thead = styled.th`
     background: #e8e8e8;

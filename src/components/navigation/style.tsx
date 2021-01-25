@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
+const table = '@media(max-width: 768px)';
+const tableVertical = '@media(max-width: 600px)';
 
 export const DivContainer = styled.div`
     width: 256px;
@@ -10,6 +12,17 @@ export const DivContainer = styled.div`
         flex-direction: row;
         height: 48px;
         background-color: #f6f8fb;
+    }
+    ${table} {
+        width: 768px;
+        min-width: 768px;
+        justify-content: space-around;
+    }
+    ${tableVertical} {
+        flex-direction: column;
+        width: 100px;
+        min-width: 100px;
+        background-color: transparent;
     }
 `;
 export const LogoDiv = styled.div`
@@ -40,6 +53,13 @@ export const DivNavDashboard = styled.div`
         flex-direction: row;
         margin-top: 0px;
     }
+    ${table} {
+        width: 70px;
+        height: 20px;
+    }
+    ${tableVertical} {
+        margin-bottom: 10px;
+    }
 `;
 export const SubTitleNav = styled.h3`
     height: 20px;
@@ -68,12 +88,22 @@ export const Divlist = styled.div`
         flex-direction: row;
         height: 48px;
     }
+    ${table} {
+        display: block;
+        margin-left: 0px;
+    }
 `;
 export const DivNoneList = styled.div`
     display: none;
     ${desktop} {
         display: block;
         width: 140px;
+    }
+    ${table} {
+        width: auto;
+    }
+    ${tableVertical} {
+        display: none;
     }
 `;
 export const LabelNoneIcon = styled.span`
@@ -99,7 +129,15 @@ export const Label = styled.h4`
         margin-top: 15.62px;
         width: auto;
         margin-left: 140px;
+
         color: #52575c;
+    }
+    ${table} {
+        margin-left: 0px;
+        height: 20px;
+        margin-top: 14px;
+        margin-right: 24px;
+        width: auto;
     }
 `;
 export const DivListNav = styled.div`
@@ -107,6 +145,12 @@ export const DivListNav = styled.div`
     align-items: center;
     width: 256px;
     height: 48px;
+    ${table} {
+        height: 20px;
+        margin-top: 0px;
+        width: auto;
+        height: 48px;
+    }
 `;
 export const LabelList = styled.h4`
     height: 20px;
@@ -122,6 +166,12 @@ export const LabelList = styled.h4`
     color: #52575c;
     ${desktop} {
         margin-left: 32px;
+    }
+    ${table} {
+        width: auto;
+        margin: 0px;
+        padding-bottom: 4px;
+        padding-left: 0px;
     }
 `;
 export const SpanListNav = styled.span`
