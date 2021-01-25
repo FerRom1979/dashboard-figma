@@ -14,11 +14,14 @@ export const DivMenu = styled.div`
 `;
 export const DivNav = styled.div`
     position: fixed;
-    top: 12%;
+    top: 21%;
     left: 6%;
     transform: translate(-18%, -18%);
     width: 100px;
     height: 100px;
+    ${movil} {
+        top: 17%;
+    }
 `;
 export const Button = styled.button`
     border: none;
