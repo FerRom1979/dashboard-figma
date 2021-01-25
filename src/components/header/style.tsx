@@ -95,6 +95,6 @@ export const DivUser = styled.div`
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        margin-right: 16px;
+        margin-right: 20px;
     }
 `;
