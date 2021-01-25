@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 const table = '@media(max-width: 768px)';
 const tableVertical = '@media(max-width: 600px)';
+const movil = '@media(max-width: 380px)';
+
 export const DivWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    ${movil} {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 `;
 export const ImgLogo = styled.img`
     width: 30px;
@@ -63,5 +69,9 @@ export const DivHeader = styled.div`
     }
     ${tableVertical} {
         width: 600px;
+    }
+    ${movil} {
+        width: 380px;
+        width: 100%;
     }
 `;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
 const table = '@media(max-width: 768px)';
 const tableVertical = '@media(max-width: 600px)';
+const movil = '@media(max-width: 380px)';
 
 export const DivContainer = styled.div`
     width: 256px;
@@ -23,6 +24,9 @@ export const DivContainer = styled.div`
         width: 100px;
         min-width: 100px;
         background-color: transparent;
+    }
+    ${movil} {
+        margin-top: 10px;
     }
 `;
 export const LogoDiv = styled.div`
@@ -58,7 +62,7 @@ export const DivNavDashboard = styled.div`
         height: 20px;
     }
     ${tableVertical} {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 `;
 export const SubTitleNav = styled.h3`
@@ -139,6 +143,9 @@ export const Label = styled.h4`
         margin-right: 24px;
         width: auto;
     }
+    ${movil} {
+        font-size: 18px;
+    }
 `;
 export const DivListNav = styled.div`
     display: flex;
@@ -150,6 +157,9 @@ export const DivListNav = styled.div`
         margin-top: 0px;
         width: auto;
         height: 48px;
+    }
+    ${movil} {
+        padding-bottom: 8px;
     }
 `;
 export const LabelList = styled.h4`
@@ -172,6 +182,9 @@ export const LabelList = styled.h4`
         margin: 0px;
         padding-bottom: 4px;
         padding-left: 0px;
+    }
+    ${movil} {
+        font-size: 18px;
     }
 `;
 export const SpanListNav = styled.span`
