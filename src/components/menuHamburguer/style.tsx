@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+const movil = '@media(max-width: 380px)';
 
 export const DivMenu = styled.div`
     width: 100px;
@@ -7,16 +8,17 @@ export const DivMenu = styled.div`
     top: 70px;
     left: 12px;
     border-radius: 50%;
+    ${movil} {
+        top: 20px;
+    }
 `;
 export const DivNav = styled.div`
     position: fixed;
-    top: 14%;
+    top: 12%;
     left: 6%;
-    transform: translate(-20%, -20%);
+    transform: translate(-18%, -18%);
     width: 100px;
     height: 100px;
-    justify-content: start;
-    align-items: center;
 `;
 export const Button = styled.button`
     border: none;

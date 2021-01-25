@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
 const table = '@media(max-width: 768px)';
+const movil = '@media(max-width: 380px)';
 
 export const DivContainer = styled.div`
     width: 1184px;
@@ -17,6 +18,11 @@ export const DivContainer = styled.div`
     ${table} {
         width: 578px;
         min-width: 578px;
+    }
+    ${movil} {
+        width: 380px;
+        min-width: 380px;
+        width: 100%;
     }
 `;
 export const InputSearch = styled.input`
@@ -53,6 +59,9 @@ export const InputDiv = styled.div`
     ${table} {
         margin-left: 32px;
     }
+    ${movil} {
+        display: none;
+    }
 `;
 export const SpanIconInput = styled.span`
     position: absolute;
@@ -81,5 +90,11 @@ export const DivUser = styled.div`
     ${table} {
         margin-left: 90px;
         margin-right: 0px;
+    }
+    ${movil} {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 16px;
     }
 `;

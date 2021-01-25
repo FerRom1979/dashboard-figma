@@ -2,6 +2,7 @@ import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
 const table = '@media(max-width: 768px)';
 const tableVertical = '@media(max-width: 600px)';
+const movil = '@media(max-width: 380px)';
 
 export const DivContainer = styled.div`
     width: 100%;
@@ -83,5 +84,9 @@ export const DivSecondaryChart = styled.div`
     ${tableVertical} {
         width: 600px;
         min-width: 600px;
+    }
+    ${movil} {
+        width: 360px;
+        min-width: 360px;
     }
 `;
