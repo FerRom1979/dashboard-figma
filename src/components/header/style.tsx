@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
+const table = '@media(max-width: 768px)';
 
 export const DivContainer = styled.div`
     width: 1184px;
@@ -12,6 +13,10 @@ export const DivContainer = styled.div`
     ${desktop} {
         width: auto;
         min-width: 829px;
+    }
+    ${table} {
+        width: 578px;
+        min-width: 578px;
     }
 `;
 export const InputSearch = styled.input`
@@ -32,12 +37,21 @@ export const InputSearch = styled.input`
     ${desktop} {
         margin-left: 16px;
     }
+    ${table} {
+        margin-left: 0px;
+        padding-left: 0px;
+        width: 256px;
+        min-width: 256px;
+    }
 `;
 export const InputDiv = styled.div`
     position: relative;
     flex: 1;
     input[type-text] {
         padding-left: 200px;
+    }
+    ${table} {
+        margin-left: 32px;
     }
 `;
 export const SpanIconInput = styled.span`
@@ -53,6 +67,9 @@ export const SpanBell = styled.span`
 export const FaceIcon = styled.span`
     font-size: 40px;
     margin-right: 24px;
+    ${table} {
+        margin-right: 0px;
+    }
 `;
 export const DivAvatar = styled.div`
     margin-right: 0;
@@ -60,5 +77,9 @@ export const DivAvatar = styled.div`
 export const DivUser = styled.div`
     ${desktop} {
         margin-right: 15px;
+    }
+    ${table} {
+        margin-left: 90px;
+        margin-right: 0px;
     }
 `;

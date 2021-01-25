@@ -3,6 +3,13 @@ import styled from 'styled-components';
 const desktop = '@media(min-width: 1168px)';
 const desktopResponsive = '@media(max-width: 1168px)';
 export const GlobalStyle = createGlobalStyle`
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
 body{
   background:#f6f8fb;
   margin:0;
@@ -12,6 +19,8 @@ body{
   text-decoration: 'none';
   width: 100%;
   height: 100vh;
+  text-rendering: optimizeLegibility;
+ 
 }
 `;
 export const DivResponsive = styled.div`

@@ -41,6 +41,7 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
             ],
         },
         maintainAspectRatio: false,
+        responsive: true,
 
         title: {
             display: true,

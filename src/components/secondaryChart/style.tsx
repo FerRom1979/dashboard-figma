@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
-
+const table = '@media(max-width: 768px)';
+const tableVertical = '@media(max-width: 600px)';
 export const DivContainer = styled.div`
     min-width: 540px;
     min-height: 286px;
@@ -12,6 +13,14 @@ export const DivContainer = styled.div`
     ${desktop} {
         min-width: 500px;
         margin-left: 0px;
+        width: 500px;
+    }
+    ${table} {
+        margin: auto;
+        width: 740px;
+        margin-bottom: 30px;
+    }
+    ${tableVertical} {
         width: 500px;
     }
 `;
