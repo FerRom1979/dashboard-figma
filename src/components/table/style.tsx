@@ -15,7 +15,7 @@ export const DivContainer = styled.div`
     ${desktop} {
         width: 1060px;
         min-width: 1060px;
-        margin-left: 50px;
+        margin: 30px auto;
     }
     ${table} {
         width: 740px;

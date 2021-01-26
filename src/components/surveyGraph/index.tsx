@@ -55,7 +55,7 @@ const SurveyGraph = () => {
             ],
         },
         maintainAspectRatio: false,
-
+        responsive: true,
         title: {
             display: true,
             text: 'Hospital Survey',

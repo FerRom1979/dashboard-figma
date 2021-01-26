@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <DivContainer>
             <DivBurger>
-                <Menu width={'200px'} isOpen>
+                <Menu width={'200px'} isOpen={false}>
                     <Navigation />
                 </Menu>
             </DivBurger>
