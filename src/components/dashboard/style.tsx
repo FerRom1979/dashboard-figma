@@ -51,6 +51,7 @@ export const DivCard = styled.div`
         width: 300px;
         min-width: 300px;
         flex-direction: row;
+        align-items: center;
         height: 500px;
     }
 `;
@@ -86,6 +87,7 @@ export const DivSecondaryChart = styled.div`
         flex-direction: column;
         margin-top: 10px;
         align-content: center;
+        align-items: center;
         margin-left: 0px;
         min-height: 600px;
     }
