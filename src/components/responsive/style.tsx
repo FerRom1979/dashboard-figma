@@ -65,10 +65,9 @@ export const DivHeader = styled.div`
     width: 1168px;
     height: 88px;
     ${table} {
-        width: 768px;
+        width: auto;
     }
     ${tableVertical} {
-        width: 600px;
         justify-content: space-around;
         justify-items: center;
     }

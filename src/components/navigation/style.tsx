@@ -16,13 +16,13 @@ export const DivContainer = styled.div`
     }
     ${table} {
         width: 768px;
-
+        min-width: 768px;
         justify-content: space-around;
     }
     ${tableVertical} {
         flex-direction: column;
         width: 100px;
-
+        min-width: 100px;
         background-color: transparent;
     }
     ${movil} {
@@ -188,6 +188,7 @@ export const LabelList = styled.h4`
     &:hover {
         color: #336cfb;
     }
+
     ${desktop} {
         margin-left: 32px;
     }
