@@ -6,7 +6,7 @@ const movil = '@media(max-width: 380px)';
 
 export const DivContainer = styled.div`
     width: 1184px;
-    min-width: 1184px;
+
     height: 88px;
     min-height: 88px;
     display: flex;
@@ -15,19 +15,16 @@ export const DivContainer = styled.div`
     background-color: #f6f8fb;
     ${desktop} {
         width: auto;
-        min-width: 829px;
     }
     ${table} {
         width: 768px;
-        min-width: 768px;
     }
     ${tableVertical} {
-        width: 480px;
-        min-width: 480px;
+        width: 600px;
     }
     ${movil} {
         width: 380px;
-        min-width: 380px;
+
         width: 100%;
     }
 `;
