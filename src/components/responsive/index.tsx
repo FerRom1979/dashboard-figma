@@ -3,7 +3,7 @@ import React from 'react';
 import Logo from '../../assets/img/logo.jpg';
 import Header from '../header/index';
 import Navigation from '../navigation/index';
-import MenuBurger from '../menuBurger/index';
+/* import MenuBurger from '../menuBurger/index'; */
 
 import * as style from './style';
 
@@ -12,14 +12,13 @@ const index = () => {
     return (
         <DivWrapper>
             <DivHeader>
+                <DivBurger>{/* <MenuBurger /> */}</DivBurger>
                 <LogoDiv>
                     <ImgLogo src={Logo} alt="logo" /> <PLogo>Healthcare</PLogo>{' '}
                 </LogoDiv>
                 <Header />
             </DivHeader>
-            <DivBurger>
-                <MenuBurger />
-            </DivBurger>
+
             <NavDiv>
                 <Navigation />
             </NavDiv>

@@ -95,6 +95,10 @@ export const Divlist = styled.div`
     ${table} {
         display: block;
         margin-left: 0px;
+        margin-top: 10px;
+    }
+    ${movil} {
+        margin-top: 0px;
     }
 `;
 export const DivNoneList = styled.div`
@@ -128,6 +132,9 @@ export const Label = styled.h4`
     letter-spacing: 0.1px;
     margin-bottom: 0;
     color: #336cfb;
+    &:hover {
+        color: #336cfb;
+    }
     ${desktop} {
         height: 48px;
         margin-top: 15.62px;
@@ -142,6 +149,10 @@ export const Label = styled.h4`
         margin-top: 14px;
         margin-right: 24px;
         width: auto;
+    }
+    ${tableVertical} {
+        font-size: 18px;
+        color: white;
     }
     ${movil} {
         font-size: 18px;
@@ -174,6 +185,11 @@ export const LabelList = styled.h4`
     line-height: 20px;
     letter-spacing: 0.1px;
     color: #52575c;
+    cursor: pointer;
+    &:hover {
+        color: #336cfb;
+    }
+
     ${desktop} {
         margin-left: 32px;
     }
@@ -182,6 +198,11 @@ export const LabelList = styled.h4`
         margin: 0px;
         padding-bottom: 4px;
         padding-left: 0px;
+    }
+    ${tableVertical} {
+        font-size: 18px;
+        margin-top: 10px;
+        color: white;
     }
     ${movil} {
         font-size: 18px;
