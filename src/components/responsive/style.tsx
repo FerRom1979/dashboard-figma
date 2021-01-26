@@ -68,7 +68,7 @@ export const DivHeader = styled.div`
         width: 768px;
     }
     ${tableVertical} {
-        width: 400px;
+        width: 600px;
         justify-content: space-around;
         justify-items: center;
     }
