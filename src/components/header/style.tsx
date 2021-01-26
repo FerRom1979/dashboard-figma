@@ -22,8 +22,8 @@ export const DivContainer = styled.div`
         min-width: 768px;
     }
     ${tableVertical} {
-        width: 600px;
-        min-width: 600px;
+        width: 100%;
+        /* min-width: 600px; */
     }
     ${movil} {
         width: 380px;
@@ -63,7 +63,7 @@ export const InputDiv = styled.div`
     ${table} {
         margin-left: 70px;
     }
-    ${movil} {
+    ${tableVertical} {
         display: none;
     }
 `;
