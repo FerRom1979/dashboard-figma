@@ -22,8 +22,8 @@ export const DivContainer = styled.div`
         min-width: 768px;
     }
     ${tableVertical} {
-        width: 100%;
-        /* min-width: 600px; */
+        width: 480px;
+        min-width: 480px;
     }
     ${movil} {
         width: 380px;
