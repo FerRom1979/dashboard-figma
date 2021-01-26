@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
 const table = '@media(max-width: 768px)';
+const tableVertical = '@media(max-width: 600px)';
 const movil = '@media(max-width: 380px)';
 
 export const DivContainer = styled.div`
@@ -18,6 +19,11 @@ export const DivContainer = styled.div`
     ${table} {
         width: 768px;
         min-width: 768px;
+    }
+    ${tableVertical} {
+        width: 600px;
+        min-width: 600px;
+        justify-content: space-between;
     }
     ${movil} {
         width: 380px;
@@ -51,13 +57,13 @@ export const InputSearch = styled.input`
     }
 `;
 export const InputDiv = styled.div`
-    position: relative;
-    flex: 1;
+    /* position: relative; */
+    /* flex: 1; */
     input[type-text] {
         padding-left: 200px;
     }
     ${table} {
-        margin-left: 32px;
+        margin-left: 70px;
     }
     ${movil} {
         display: none;
@@ -88,13 +94,22 @@ export const DivUser = styled.div`
         margin-right: 15px;
     }
     ${table} {
-        margin-left: 90px;
+        margin-left: 10px;
         margin-right: 10px;
+    }
+    ${tableVertical} {
+        margin-right: 16px;
     }
     ${movil} {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;
+    }
+`;
+export const DivBurger = styled.div`
+    display: none;
+    ${tableVertical} {
+        display: block;
     }
 `;

@@ -28,5 +28,6 @@ export const DivContainer = styled.div`
     ${movil} {
         width: 360px;
         min-width: 360px;
+        margin: auto;
     }
 `;
