@@ -2,9 +2,9 @@ import styled from 'styled-components';
 const desktop = '@media(max-width: 1168px)';
 const table = '@media(max-width: 768px)';
 const tableVertical = '@media(max-width: 600px)';
-const movil = '@media(max-width:380px)';
 
 export const DivContainer = styled.div`
+    width: 100%;
     min-width: 255px;
     width: 255px;
     height: 88px;
@@ -25,9 +25,6 @@ export const DivContainer = styled.div`
     }
     ${tableVertical} {
         width: 100%;
-        margin: auto;
-    }
-    ${movil} {
         margin: auto;
     }
 `;

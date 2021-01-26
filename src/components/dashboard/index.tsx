@@ -7,23 +7,19 @@ import SecondaryChatr from '../secondaryChart/index';
 import BasicTable from '../table/basicTable';
 import GraphicPie from '../graphicPie/index';
 import GraphicDoughnut from '../graphicDoughnut/index';
-
 import * as style from './style';
-
 import {
     faBriefcaseMedical,
     faUserInjured,
     faProcedures,
     faUniversity,
 } from '@fortawesome/free-solid-svg-icons';
-
 const Dashboard = () => {
     const {
         DivContainer,
         DivCard,
         DivSecondaryChart,
-        DivNav,
-        DivHeader,
+        DivResponsive,
         GraphicDiv,
         GraphicDougDiv,
     } = style;
@@ -45,30 +41,25 @@ const Dashboard = () => {
         titletwo = '$25,000',
         legendtwo = 'Income in current week',
         borderColortwo = '#fac032';
-
     return (
         <DivContainer>
-            <DivNav>
+            <DivResponsive>
                 <Navigation />
-            </DivNav>
-
+            </DivResponsive>
             <div>
-                <DivHeader>
+                <DivResponsive>
                     <Header />
-                </DivHeader>
-
+                </DivResponsive>
                 <DivCard>
                     <Card title={'Appointments'} people={'213'} logo={faBriefcaseMedical} />
                     <Card title={'New Patients'} people={'104'} logo={faUserInjured} />
                     <Card title={'Operatios'} people={'24'} logo={faProcedures} />
                     <Card title={'Hospital Earnings'} people={'$12,74'} logo={faUniversity} />
                 </DivCard>
-
                 <SurveyGraph />
                 <GraphicDiv>
                     <GraphicPie />
                 </GraphicDiv>
-
                 <DivSecondaryChart>
                     <SecondaryChatr
                         dataLabel={dataLabel}
@@ -101,7 +92,6 @@ const Dashboard = () => {
                         borderColor={borderColortwo}
                     />
                 </GraphicDougDiv>
-
                 <BasicTable />
             </div>
         </DivContainer>

@@ -52,7 +52,6 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
             color: 'black',
             textAling: 'left',
         },
-
         legend: {
             align: 'end',
             fontFamily: 'Lato',

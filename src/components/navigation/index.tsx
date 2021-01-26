@@ -2,7 +2,6 @@ import React from 'react';
 import * as style from './style';
 import Logo from '../../assets/img/logo.jpg';
 import { Link } from 'react-router-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faChartPie,
@@ -31,7 +30,6 @@ const Navigation = () => {
         DivNoneList,
         LabelNoneIcon,
     } = style;
-
     return (
         <DivContainer>
             <LogoDiv>

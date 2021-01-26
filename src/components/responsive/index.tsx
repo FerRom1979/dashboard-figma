@@ -3,7 +3,6 @@ import React from 'react';
 import Logo from '../../assets/img/logo.jpg';
 import Header from '../header/index';
 import Navigation from '../navigation/index';
-
 import * as style from './style';
 
 const index = () => {
@@ -16,7 +15,6 @@ const index = () => {
                 </LogoDiv>
                 <Header />
             </DivHeader>
-
             <NavDiv>
                 <Navigation />
             </NavDiv>
