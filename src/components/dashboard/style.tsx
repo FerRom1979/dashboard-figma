@@ -14,6 +14,7 @@ export const DivContainer = styled.div`
         flex-direction: column;
     }
 `;
+
 export const DivContainerMain = styled.div`
     width: 100%;
     display: flex;
@@ -59,6 +60,19 @@ export const DivCard = styled.div`
         height: 500px;
     }
 `;
+export const GraphicDiv = styled.div`
+    display: none;
+    ${table} {
+        display: block;
+    }
+`;
+export const GraphicDougDiv = styled.div`
+    display: none;
+    ${movil} {
+        display: block;
+    }
+`;
+
 export const DivSecondaryChart = styled.div`
     width: 1184px;
     min-width: 1184px;
