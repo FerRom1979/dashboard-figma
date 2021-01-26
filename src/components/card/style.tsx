@@ -25,6 +25,7 @@ export const DivContainer = styled.div`
     }
     ${tableVertical} {
         width: 100%;
+        margin: auto;
     }
     ${movil} {
         margin: auto;
