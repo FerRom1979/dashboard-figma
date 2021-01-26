@@ -64,7 +64,7 @@ export const GraphicDiv = styled.div`
 `;
 export const GraphicDougDiv = styled.div`
     display: none;
-    ${movil} {
+    ${table} {
         display: block;
     }
 `;
@@ -92,11 +92,13 @@ export const DivSecondaryChart = styled.div`
         min-height: 600px;
     }
     ${tableVertical} {
-        width: 600px;
-        min-width: 600px;
+        /* width: 600px;
+        min-width: 600px; */
+        display: none;
     }
     ${movil} {
         width: 360px;
         min-width: 360px;
+        display: block;
     }
 `;
