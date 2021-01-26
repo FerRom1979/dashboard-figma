@@ -5,6 +5,8 @@ import Card from '../card/index';
 import SurveyGraph from '../surveyGraph/index';
 import SecondaryChatr from '../secondaryChart/index';
 import BasicTable from '../table/basicTable';
+import GraphicPie from '../graphicPie/index';
+import GraphicDoughnut from '../graphicDoughnut/index';
 
 import * as style from './style';
 
@@ -16,7 +18,15 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Dashboard = () => {
-    const { DivContainer, DivCard, DivSecondaryChart, DivNav, DivHeader } = style;
+    const {
+        DivContainer,
+        DivCard,
+        DivSecondaryChart,
+        DivNav,
+        DivHeader,
+        GraphicDiv,
+        GraphicDougDiv,
+    } = style;
     const dataLabel = ['1 July', '8 July', '16 July', '24 July', '31 July'],
         dataSet = [60000, 70000, 35000, 63000, 42000],
         title = '$100,000',
@@ -35,6 +45,7 @@ const Dashboard = () => {
         titletwo = '$25,000',
         legendtwo = 'Income in current week',
         borderColortwo = '#fac032';
+
     return (
         <DivContainer>
             <DivNav>
@@ -54,6 +65,9 @@ const Dashboard = () => {
                 </DivCard>
 
                 <SurveyGraph />
+                <GraphicDiv>
+                    <GraphicPie />
+                </GraphicDiv>
 
                 <DivSecondaryChart>
                     <SecondaryChatr
@@ -71,6 +85,22 @@ const Dashboard = () => {
                         borderColor={borderColortwo}
                     />
                 </DivSecondaryChart>
+                <GraphicDougDiv>
+                    <GraphicDoughnut
+                        dataLabel={dataLabel}
+                        dataSet={dataSet}
+                        title={title}
+                        legend={legend}
+                        borderColor={borderColor}
+                    />
+                    <GraphicDoughnut
+                        dataLabel={dataLabeltwo}
+                        dataSet={dataSettwo}
+                        title={titletwo}
+                        legend={legendtwo}
+                        borderColor={borderColortwo}
+                    />
+                </GraphicDougDiv>
 
                 <BasicTable />
             </div>

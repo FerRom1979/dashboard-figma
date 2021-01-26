@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 const desktop = '@media(max-width: 1168px)';
 const table = '@media(max-width: 768px)';
 const tableVertical = '@media(max-width: 600px)';
@@ -11,7 +12,9 @@ export const DivContainer = styled.div`
     min-height: 88px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #f6f8fb;
+
     ${desktop} {
         width: auto;
         min-width: 829px;
@@ -23,7 +26,6 @@ export const DivContainer = styled.div`
     ${tableVertical} {
         width: 600px;
         min-width: 600px;
-        justify-content: space-between;
     }
     ${movil} {
         width: 380px;
@@ -95,10 +97,11 @@ export const DivUser = styled.div`
     }
     ${table} {
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     ${tableVertical} {
         margin-right: 16px;
+        margin-right: 20px;
     }
     ${movil} {
         width: 100%;
