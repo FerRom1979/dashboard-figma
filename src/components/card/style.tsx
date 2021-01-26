@@ -18,8 +18,8 @@ export const DivContainer = styled.div`
         width: 230px;
     }
     ${table} {
-        min-width: 400px;
-        width: 400px;
+        min-width: 300px;
+        width: 300px;
         margin-bottom: 20px;
         height: 98px;
     }
