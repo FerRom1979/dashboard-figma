@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
-
 import * as style from './style';
 import { slide as Menu } from 'react-burger-menu';
 import Navigation from '../navigation/index';

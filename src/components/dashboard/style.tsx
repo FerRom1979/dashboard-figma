@@ -14,7 +14,6 @@ export const DivContainer = styled.div`
         flex-direction: column;
     }
 `;
-
 export const DivContainerMain = styled.div`
     width: 100%;
     display: flex;
@@ -22,12 +21,7 @@ export const DivContainerMain = styled.div`
     align-self: stretch;
     background-color: #f6f8fb;
 `;
-export const DivNav = styled.div`
-    ${desktop} {
-        display: none;
-    }
-`;
-export const DivHeader = styled.div`
+export const DivResponsive = styled.div`
     ${desktop} {
         display: none;
     }
@@ -64,6 +58,7 @@ export const GraphicDiv = styled.div`
     display: none;
     ${table} {
         display: block;
+        width: 100%;
     }
 `;
 export const GraphicDougDiv = styled.div`
@@ -72,7 +67,6 @@ export const GraphicDougDiv = styled.div`
         display: block;
     }
 `;
-
 export const DivSecondaryChart = styled.div`
     width: 1184px;
     min-width: 1184px;

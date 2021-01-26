@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 const desktop = '@media(max-width: 1168px)';
 const table = '@media(max-width: 768px)';
 const tableVertical = '@media(max-width: 600px)';
@@ -14,7 +13,6 @@ export const DivContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: #f6f8fb;
-
     ${desktop} {
         width: auto;
         min-width: 829px;
@@ -59,8 +57,6 @@ export const InputSearch = styled.input`
     }
 `;
 export const InputDiv = styled.div`
-    /* position: relative; */
-    /* flex: 1; */
     input[type-text] {
         padding-left: 200px;
     }

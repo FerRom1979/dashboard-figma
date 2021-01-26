@@ -140,7 +140,6 @@ export const Label = styled.h4`
         margin-top: 15.62px;
         width: auto;
         margin-left: 140px;
-
         color: #52575c;
     }
     ${table} {
@@ -189,7 +188,6 @@ export const LabelList = styled.h4`
     &:hover {
         color: #336cfb;
     }
-
     ${desktop} {
         margin-left: 32px;
     }
