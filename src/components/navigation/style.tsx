@@ -95,7 +95,7 @@ export const Divlist = styled.div`
     ${table} {
         display: block;
         margin-left: 0px;
-        margin-top: 10px;
+        margin-top: 1px;
     }
     ${movil} {
         margin-top: 0px;
