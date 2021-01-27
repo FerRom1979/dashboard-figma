@@ -40,7 +40,7 @@ const Dashboard = () => {
                 <Navigation />
             </ResponsiveDiv>
             <div>
-                <ResponsiveDiv displayDesktop={'block'}>
+                <ResponsiveDiv displayDesktop={'none'}>
                     <Header />
                 </ResponsiveDiv>
                 <DivCard>
