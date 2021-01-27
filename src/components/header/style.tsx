@@ -14,7 +14,7 @@ export const DivContainer = styled.div`
     justify-content: space-between;
     background-color: #f6f8fb;
     ${desktop} {
-        width: auto;
+        width: 900px;
     }
     ${table} {
         width: 768px;
@@ -85,8 +85,9 @@ export const DivAvatar = styled.div`
     margin-right: 0;
 `;
 export const DivUser = styled.div`
+    margin-right: 24px;
     ${desktop} {
-        margin-right: 15px;
+        margin-right: 0px;
     }
     ${table} {
         margin-left: 10px;

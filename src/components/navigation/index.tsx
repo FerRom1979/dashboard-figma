@@ -80,7 +80,7 @@ const Navigation = () => {
             </DivListNav>
             <DivNoneList>
                 <DivListNav>
-                    <LabelList>Service pages</LabelList>
+                    <LabelList>ServicePages</LabelList>
                     <LabelNoneIcon>
                         <FontAwesomeIcon icon={faChevronDown} />
                     </LabelNoneIcon>
