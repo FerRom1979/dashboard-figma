@@ -70,6 +70,5 @@ export const DivHeader = styled.div`
     }
     ${movil} {
         width: 380px;
-        width: 100%;
     }
 `;
