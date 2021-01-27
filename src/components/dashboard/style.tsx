@@ -27,18 +27,19 @@ export const DivResponsive = styled.div`
     }
 `;
 export const DivCard = styled.div`
-    width: 1184px;
-    min-width: 1184px;
+    width: 1110px;
+    min-width: 1110px;
     min-height: 88px;
+    margin-left: 36px;
     height: 88px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 8px;
     margin-bottom: 30px;
     ${desktop} {
-        width: 900px;
-        min-width: 1100px;
-        margin-left: 30px;
+        width: 1060px;
+        min-width: 1060px;
+        margin-left: 50px;
     }
     ${table} {
         width: 768px;
@@ -46,6 +47,7 @@ export const DivCard = styled.div`
         margin: auto;
         flex-wrap: wrap;
         height: 236px;
+        justify-content: space-around;
     }
     ${tableVertical} {
         width: 300px;

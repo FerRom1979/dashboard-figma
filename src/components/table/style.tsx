@@ -62,7 +62,7 @@ export const Title = styled.h1`
     color: #25282b;
     margin-left: 24px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     line-height: 26px;
     letter-spacing: 0.2px;
     height: 43px;

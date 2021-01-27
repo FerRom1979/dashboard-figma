@@ -12,6 +12,7 @@ export const DivContainer = styled.div`
         display: flex;
         flex-direction: row;
         height: 48px;
+        width: 1060;
         background-color: #f6f8fb;
     }
     ${table} {
@@ -50,6 +51,9 @@ export const ImgLogo = styled.img`
 export const DivNavDashboard = styled.div`
     width: 256px;
     height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 32px;
     margin-bottom: 2px;
     ${desktop} {
@@ -69,7 +73,6 @@ export const SubTitleNav = styled.h3`
     height: 20px;
     margin-left: 24px;
     margin-right: 24px;
-    padding-top: 20px;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -85,7 +88,6 @@ export const SubTitleNav = styled.h3`
 `;
 export const Divlist = styled.div`
     display: flex;
-    height: 20px;
     margin-left: 25px;
     ${desktop} {
         display: flex;
@@ -105,7 +107,6 @@ export const DivNoneList = styled.div`
     display: none;
     ${desktop} {
         display: block;
-        width: 140px;
     }
     ${table} {
         width: auto;
@@ -123,12 +124,10 @@ export const Label = styled.h4`
     margin-left: 13px;
     right: 24px;
     width: 180px;
-    height: 20px;
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    margin-top: 20px;
     letter-spacing: 0.1px;
     margin-bottom: 0;
     color: #336cfb;
@@ -139,7 +138,7 @@ export const Label = styled.h4`
         height: 48px;
         margin-top: 15.62px;
         width: auto;
-        margin-left: 140px;
+        margin-left: 28px;
         color: #52575c;
     }
     ${table} {
@@ -159,8 +158,8 @@ export const Label = styled.h4`
 `;
 export const DivListNav = styled.div`
     display: flex;
+
     align-items: center;
-    width: 256px;
     height: 48px;
     ${table} {
         height: 20px;

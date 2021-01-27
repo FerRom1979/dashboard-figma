@@ -36,7 +36,7 @@ export const LogoDiv = styled.div`
     width: 142px;
     height: 30px;
     margin-top: 24px;
-    margin-left: 165px;
+    margin-left: 50px;
     color: #336cfb;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -62,7 +62,7 @@ export const DivBurger = styled.div`
 `;
 export const DivHeader = styled.div`
     display: flex;
-    width: 1168px;
+    width: 1110px;
     height: 88px;
     ${table} {
         width: auto;
