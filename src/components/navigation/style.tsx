@@ -25,9 +25,11 @@ export const DivContainer = styled.div`
         width: 100px;
         min-width: 100px;
         background-color: transparent;
+        margin-top: 50px;
     }
     ${movil} {
         margin-top: 50px;
+        margin-left: 100px;
     }
 `;
 export const LogoDiv = styled.div`

@@ -23,7 +23,6 @@ export const DivContainer = styled.div`
     }
     ${movil} {
         width: 380px;
-
         width: 100%;
     }
 `;
@@ -90,7 +89,6 @@ export const DivUser = styled.div`
     }
 
     ${movil} {
-        width: 100%;
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;
