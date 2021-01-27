@@ -54,15 +54,12 @@ export const PCardNumber = styled.p`
     margin-bottom: 20px;
     margin-top: 5px;
 `;
-export const DivIcon = styled.div`
-    margin-left: 26.5px;
-    margin-top: 26.26px;
-`;
-export const DivInfo = styled.div`
-    margin-left: 26.49px;
-`;
 export const SpanIcon = styled.span`
     font-size: 40px;
     color: #336cfb;
     margin-top: 26.26px;
+`;
+export const DivBodyCard = styled.div<{ marginLeft?: number; marginTop?: number }>`
+    margin-left: ${({ marginLeft }) => `${marginLeft}px` || ''};
+    margin-top: ${({ marginTop }) => `${marginTop}px` || ''};
 `;

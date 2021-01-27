@@ -7,26 +7,26 @@ import Navigation from '../navigation/index';
 import './styles.css';
 
 const Header = () => {
-    const { DivContainer, InputSearch, InputDiv, SpanBell, FaceIcon, DivUser, DivBurger } = style;
+    const { ResponsiveDiv, UserSpan, DivContainer, InputSearch, DivUser } = style;
     return (
         <DivContainer>
-            <DivBurger>
-                <Menu width={'200px'} isOpen={false}>
+            <ResponsiveDiv display={'none'} displayTableVertical={'block'}>
+                <Menu isOpen={false}>
                     <Navigation />
                 </Menu>
-            </DivBurger>
+            </ResponsiveDiv>
 
-            <InputDiv>
+            <ResponsiveDiv displayTableVertical={'none'} marginLeftTable={70}>
                 <InputSearch type="text" placeholder="&#128269;    Search" />
-            </InputDiv>
+            </ResponsiveDiv>
 
             <DivUser>
-                <SpanBell>
-                    <FontAwesomeIcon icon={faBell} />
-                </SpanBell>
-                <FaceIcon>
+                <UserSpan color={'#cacccf'}>
+                    <FontAwesomeIcon icon={faBell} fontSize={21} />
+                </UserSpan>
+                <UserSpan fontSize={40} marginRightTable={0}>
                     <FontAwesomeIcon icon={faUser} />
-                </FaceIcon>
+                </UserSpan>
             </DivUser>
         </DivContainer>
     );

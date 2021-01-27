@@ -27,7 +27,7 @@ export const DivContainer = styled.div`
         background-color: transparent;
     }
     ${movil} {
-        margin-top: 10px;
+        margin-top: 50px;
     }
 `;
 export const LogoDiv = styled.div`
@@ -89,6 +89,7 @@ export const SubTitleNav = styled.h3`
 export const Divlist = styled.div`
     display: flex;
     margin-left: 25px;
+    padding-bottom: 10px;
     ${desktop} {
         display: flex;
         flex-direction: row;

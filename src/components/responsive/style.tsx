@@ -25,9 +25,6 @@ export const PLogo = styled.p`
     font-family: Lato;
     font-weight: bold;
     padding: 10px;
-    ${table} {
-        padding: 10px;
-    }
 `;
 export const LogoDiv = styled.div`
     display: flex;
