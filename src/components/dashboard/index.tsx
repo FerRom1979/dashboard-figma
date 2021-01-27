@@ -15,14 +15,7 @@ import {
     faUniversity,
 } from '@fortawesome/free-solid-svg-icons';
 const Dashboard = () => {
-    const {
-        DivContainer,
-        DivCard,
-        DivSecondaryChart,
-        DivResponsive,
-        GraphicDiv,
-        GraphicDougDiv,
-    } = style;
+    const { ResponsiveDiv, DivContainer, DivCard, DivSecondaryChart } = style;
     const dataLabel = ['1 July', '8 July', '16 July', '24 July', '31 July'],
         dataSet = [60000, 70000, 35000, 63000, 42000],
         title = '$100,000',
@@ -43,13 +36,13 @@ const Dashboard = () => {
         borderColortwo = '#fac032';
     return (
         <DivContainer>
-            <DivResponsive>
+            <ResponsiveDiv displayDesktop={'none'}>
                 <Navigation />
-            </DivResponsive>
+            </ResponsiveDiv>
             <div>
-                <DivResponsive>
+                <ResponsiveDiv displayDesktop={'block'}>
                     <Header />
-                </DivResponsive>
+                </ResponsiveDiv>
                 <DivCard>
                     <Card title={'Appointments'} people={'213'} logo={faBriefcaseMedical} />
                     <Card title={'New Patients'} people={'104'} logo={faUserInjured} />
@@ -57,9 +50,9 @@ const Dashboard = () => {
                     <Card title={'Hospital Earnings'} people={'$12,74'} logo={faUniversity} />
                 </DivCard>
                 <SurveyGraph />
-                <GraphicDiv>
+                <ResponsiveDiv displayTable={'block'} display={'none'} width={100}>
                     <GraphicPie />
-                </GraphicDiv>
+                </ResponsiveDiv>
                 <DivSecondaryChart>
                     <SecondaryChatr
                         dataLabel={dataLabel}
@@ -76,7 +69,7 @@ const Dashboard = () => {
                         borderColor={borderColortwo}
                     />
                 </DivSecondaryChart>
-                <GraphicDougDiv>
+                <ResponsiveDiv displayTable={'block'} display={'none'}>
                     <GraphicDoughnut
                         dataLabel={dataLabel}
                         dataSet={dataSet}
@@ -91,7 +84,7 @@ const Dashboard = () => {
                         legend={legendtwo}
                         borderColor={borderColortwo}
                     />
-                </GraphicDougDiv>
+                </ResponsiveDiv>
                 <BasicTable />
             </div>
         </DivContainer>

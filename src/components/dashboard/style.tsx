@@ -14,18 +14,6 @@ export const DivContainer = styled.div`
         flex-direction: column;
     }
 `;
-export const DivContainerMain = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    background-color: #f6f8fb;
-`;
-export const DivResponsive = styled.div`
-    ${desktop} {
-        display: none;
-    }
-`;
 export const DivCard = styled.div`
     width: 1110px;
     min-width: 1110px;
@@ -34,7 +22,7 @@ export const DivCard = styled.div`
     height: 88px;
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
+    margin-top: 34px;
     margin-bottom: 30px;
     ${desktop} {
         width: 1060px;
@@ -44,7 +32,8 @@ export const DivCard = styled.div`
     ${table} {
         width: 768px;
         min-width: 768px;
-        margin: auto;
+        margin-top: 30px;
+        margin: 30px auto;
         flex-wrap: wrap;
         height: 236px;
         justify-content: space-around;
@@ -55,19 +44,6 @@ export const DivCard = styled.div`
         flex-direction: row;
         align-items: center;
         height: 500px;
-    }
-`;
-export const GraphicDiv = styled.div`
-    display: none;
-    ${table} {
-        display: block;
-        width: 100%;
-    }
-`;
-export const GraphicDougDiv = styled.div`
-    display: none;
-    ${table} {
-        display: block;
     }
 `;
 export const DivSecondaryChart = styled.div`
@@ -94,13 +70,26 @@ export const DivSecondaryChart = styled.div`
         min-height: 600px;
     }
     ${tableVertical} {
-        /* width: 600px;
-        min-width: 600px; */
         display: none;
     }
     ${movil} {
         width: 360px;
         min-width: 360px;
         display: block;
+    }
+`;
+export const ResponsiveDiv = styled.div<{
+    display?: string;
+    displayDesktop?: string;
+    displayTable?: string;
+    width?: number;
+}>`
+    display: ${({ display }) => `${display}` || ''};
+    ${desktop} {
+        display: ${({ displayDesktop }) => `${displayDesktop}` || ''};
+    }
+    ${table} {
+        display: ${({ displayTable }) => `${displayTable}` || ''};
+        width: ${({ width }) => `${width}%` || ''};
     }
 `;

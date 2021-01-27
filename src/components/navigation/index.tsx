@@ -1,7 +1,7 @@
 import React from 'react';
 import * as style from './style';
 import Logo from '../../assets/img/logo.jpg';
-import { Link } from 'react-router-dom';
+/* import { Link } from 'react-router-dom'; */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faChartPie,
@@ -41,18 +41,18 @@ const Navigation = () => {
                     <SpanListDash>
                         <FontAwesomeIcon icon={faChartPie} />
                     </SpanListDash>
-                    <Link to="/dashboard">
-                        <Label>Dashboard</Label>
-                    </Link>
+                    {/* <Link to="/dashboard"> */}
+                    <Label>Dashboard</Label>
+                    {/* </Link> */}
                 </Divlist>
             </DivNavDashboard>
             <DivListNav>
                 <SpanListNav>
                     <FontAwesomeIcon icon={faStethoscope} />
                 </SpanListNav>
-                <Link to="/basicTable">
-                    <LabelList>Appointments</LabelList>
-                </Link>
+                {/* <Link to="/basicTable"> */}
+                <LabelList>Appointments</LabelList>
+                {/* </Link> */}
             </DivListNav>
             <DivListNav>
                 <SpanListNav>

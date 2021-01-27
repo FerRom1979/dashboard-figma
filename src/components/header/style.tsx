@@ -6,7 +6,6 @@ const movil = '@media(max-width: 380px)';
 
 export const DivContainer = styled.div`
     width: 1184px;
-
     height: 88px;
     min-height: 88px;
     display: flex;
@@ -53,37 +52,33 @@ export const InputSearch = styled.input`
         min-width: 256px;
     }
 `;
-export const InputDiv = styled.div`
-    input[type-text] {
-        padding-left: 200px;
-    }
+
+export const ResponsiveDiv = styled.div<{
+    display?: string;
+    displayTableVertical?: string;
+    marginLeftTable?: number;
+}>`
+    display: ${({ display }) => `${display}` || ''};
     ${table} {
-        margin-left: 70px;
+        margin-left: ${({ marginLeftTable }) => `${marginLeftTable}px` || ''};
     }
     ${tableVertical} {
-        display: none;
+        display: ${({ displayTableVertical }) => `${displayTableVertical}` || ''};
     }
 `;
-export const SpanIconInput = styled.span`
-    position: absolute;
-    left: 40px;
-    top: 8px;
-`;
-export const SpanBell = styled.span`
-    font-size: 21px;
-    color: #cacccf;
+export const UserSpan = styled.span<{
+    fontSize?: number;
+    color?: string;
+    marginRightTable?: number;
+}>`
     margin-right: 24px;
-`;
-export const FaceIcon = styled.span`
-    font-size: 40px;
-    margin-right: 24px;
+    font-size: ${({ fontSize }) => `${fontSize}px` || ''};
+    color: ${({ color }) => `${color}` || ''};
     ${table} {
-        margin-right: 0px;
+        margin-right: ${({ marginRightTable }) => `${marginRightTable}px` || ''};
     }
 `;
-export const DivAvatar = styled.div`
-    margin-right: 0;
-`;
+
 export const DivUser = styled.div`
     margin-right: 24px;
     ${desktop} {
@@ -93,20 +88,11 @@ export const DivUser = styled.div`
         margin-left: 10px;
         margin-right: 20px;
     }
-    ${tableVertical} {
-        margin-right: 16px;
-        margin-right: 20px;
-    }
+
     ${movil} {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;
-    }
-`;
-export const DivBurger = styled.div`
-    display: none;
-    ${tableVertical} {
-        display: block;
     }
 `;
