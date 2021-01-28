@@ -5,19 +5,19 @@ import * as style from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Card: React.FC<IPropsCard> = ({ title, people, logo }) => {
-    const { DivContainer, PCard, PCardNumber, SpanIcon, DivBodyCard } = style;
+    const { DivContainer, PCard, PCardNumber, SpanIcon, DivSectionCard } = style;
 
     return (
         <DivContainer>
-            <DivBodyCard marginLeft={26.5} marginTop={26.26}>
+            <DivSectionCard marginLeft={24} marginTop={24}>
                 <SpanIcon>
                     <FontAwesomeIcon icon={logo} />
                 </SpanIcon>
-            </DivBodyCard>
-            <DivBodyCard marginLeft={26.49}>
+            </DivSectionCard>
+            <DivSectionCard marginLeft={24}>
                 <PCard>{title}</PCard>
                 <PCardNumber>{people}</PCardNumber>
-            </DivBodyCard>
+            </DivSectionCard>
         </DivContainer>
     );
 };

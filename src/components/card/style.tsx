@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-const desktop = '@media(max-width: 1168px)';
-const table = '@media(max-width: 768px)';
-const tableVertical = '@media(max-width: 600px)';
-const movil = '@media(max-width: 380px)';
+import * as mediaQueris from '../mediaQueris';
+
+const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
+
 export const DivContainer = styled.div`
     width: 100%;
     min-width: 255px;
@@ -17,18 +17,18 @@ export const DivContainer = styled.div`
         min-width: 230px;
         width: 230px;
     }
-    ${table} {
+    ${tablet} {
         min-width: 300px;
         width: 300px;
         margin-bottom: 20px;
         height: 98px;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         min-width: 300px;
         width: 300px;
         margin: auto;
     }
-    ${movil} {
+    ${mobile} {
         min-width: 300px;
         width: 300px;
     }
@@ -36,16 +36,14 @@ export const DivContainer = styled.div`
 export const PCard = styled.p`
     margin-top: 20px;
     margin-bottom: 5px;
-    font-family: Lato;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
     line-height: 20px;
-    letter-spacing: o.1px;
+    letter-spacing: 0.1px;
     color: #25282b;
 `;
 export const PCardNumber = styled.p`
-    font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -59,7 +57,7 @@ export const SpanIcon = styled.span`
     color: #336cfb;
     margin-top: 26.26px;
 `;
-export const DivBodyCard = styled.div<{ marginLeft?: number; marginTop?: number }>`
+export const DivSectionCard = styled.div<{ marginLeft?: number; marginTop?: number }>`
     margin-left: ${({ marginLeft }) => `${marginLeft}px` || ''};
     margin-top: ${({ marginTop }) => `${marginTop}px` || ''};
 `;

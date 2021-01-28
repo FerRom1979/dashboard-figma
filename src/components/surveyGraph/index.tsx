@@ -25,13 +25,13 @@ const SurveyGraph = () => {
                 background:
                     'linear-gradient(180deg, rgba(51, 108, 251, 0.2) 0%, rgba(51, 108, 251, 0.02) 100%)',
                 borderColor: '#336cfb',
-                borderWidht: 1,
+                borderWidth: 1,
                 data: [150, 100, 200, 111, 180, 140, 180, 170, 155, 190, 220, 240],
             },
             {
                 label: 'Patients 2020',
                 borderColor: '#fac032',
-                borderWidht: 1,
+                borderWidth: 1,
                 fill: false,
                 data: [50, 100, 150, 171, 160, 130, 170, 180, 165, 110, 190, 210],
             },
@@ -63,7 +63,7 @@ const SurveyGraph = () => {
             fontWeight: 'bold',
             fontSize: 20,
             color: '#25282b',
-            aling: 'start',
+            align: 'start',
         },
 
         legend: {
@@ -76,15 +76,15 @@ const SurveyGraph = () => {
             labels: {
                 boxWidth: 40,
                 padding: 10,
-                boxHeinght: 1,
+                boxHeight: 1,
             },
         },
         tooltips: {
-            titleAlign: 'rigth',
+            titleAlign: 'right',
         },
         elements: {
             line: {
-                borderWidh: 1,
+                borderWidth: 1,
                 padding: 10,
                 fill: false,
             },

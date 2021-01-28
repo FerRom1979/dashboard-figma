@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
+
 const desktop = '@media(min-width: 1168px)';
 const desktopResponsive = '@media(max-width: 1168px)';
+
 export const GlobalStyle = createGlobalStyle`
 html, body {
     margin: 0;
@@ -20,7 +22,7 @@ body{
   width: 100%;
   height: 100vh;
   text-rendering: optimizeLegibility;
- 
+  font-family:Lato;
 }
 `;
 export const DivResponsive = styled.div`

@@ -45,7 +45,7 @@ export const DATA: any = [
         conditions: 'Mumps Stage ||',
     },
     {
-        name: 'Laslie Alexander',
+        name: 'Leslie Alexander',
 
         email: 'lesie.alexander@example.com',
         date: '10/10/20',

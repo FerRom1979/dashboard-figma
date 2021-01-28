@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-const desktop = '@media(max-width: 1168px)';
-const table = '@media(max-width: 768px)';
-const tableVertical = '@media(max-width: 600px)';
-const movil = '@media(max-width: 380px)';
+import * as mediaQueris from '../mediaQueris';
+
+const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
 
 export const DivContainer = styled.div`
     width: 100%;
@@ -29,7 +28,7 @@ export const DivCard = styled.div`
         min-width: 1060px;
         margin-left: 50px;
     }
-    ${table} {
+    ${tablet} {
         width: 768px;
         min-width: 768px;
         margin-top: 30px;
@@ -38,7 +37,7 @@ export const DivCard = styled.div`
         height: 236px;
         justify-content: space-around;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         width: 300px;
         min-width: 300px;
         flex-direction: row;
@@ -59,7 +58,7 @@ export const DivSecondaryChart = styled.div`
         margin-left: 50px;
         justify-content: space-between;
     }
-    ${table} {
+    ${tablet} {
         width: 768px;
         min-width: 768px;
         flex-direction: column;
@@ -69,10 +68,10 @@ export const DivSecondaryChart = styled.div`
         margin-left: 0px;
         min-height: 600px;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         display: none;
     }
-    ${movil} {
+    ${mobile} {
         width: 360px;
         min-width: 360px;
         display: block;
@@ -88,7 +87,7 @@ export const ResponsiveDiv = styled.div<{
     ${desktop} {
         display: ${({ displayDesktop }) => `${displayDesktop}` || ''};
     }
-    ${table} {
+    ${tablet} {
         display: ${({ displayTable }) => `${displayTable}` || ''};
         width: ${({ width }) => `${width}%` || ''};
     }
