@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-const desktop = '@media(max-width: 1168px)';
-const table = '@media(max-width: 768px)';
+import * as mediaQueris from '../mediaQueris';
+
+const { desktop, tablet } = mediaQueris;
+
 export const DivContainer = styled.div`
     min-width: 1110px;
     min-height: 374px;
@@ -14,7 +16,7 @@ export const DivContainer = styled.div`
         margin-left: 50px;
         width: 1060px;
     }
-    ${table} {
+    ${tablet} {
         display: none;
     }
 `;

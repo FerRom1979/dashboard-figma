@@ -1,5 +1,5 @@
 import React from 'react';
-import Dasboard from './components/dashboard/index';
+import Dashboard from './components/dashboard/index';
 import { GlobalStyle } from './indexStyle';
 import * as style from './indexStyle';
 import Responsive from './components/responsive/index';
@@ -8,6 +8,7 @@ import BasicTable from './components/table/basicTable';
 
 function App() {
     const { DivResponsive, DivDashboard } = style;
+
     return (
         <div className="App">
             <Router>
@@ -16,10 +17,11 @@ function App() {
                     <Responsive />
                 </DivResponsive>
                 <DivDashboard>
-                    <Dasboard />
+                    <Dashboard />
                 </DivDashboard>
                 <Switch>
-                    <Route exact path="/dashboard" component={Dasboard} />
+                    <Route exact path="/responsive" component={Responsive} />
+                    <Route exact path="/dashboard" component={Dashboard} />
                     <Route exact path="/basicTable" component={BasicTable} />
                 </Switch>
             </Router>

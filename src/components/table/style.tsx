@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-const desktop = '@media(max-width: 1168px)';
-const table = '@media(max-width: 768px)';
-const tableVertical = '@media(max-width: 600px)';
+import * as mediaQueris from '../mediaQueris';
+
+const { desktop, tablet, verticalTablet } = mediaQueris;
+
 export const DivContainer = styled.div`
     min-width: 1110px;
     max-height: 410px;
@@ -17,14 +18,14 @@ export const DivContainer = styled.div`
         min-width: 1060px;
         margin: 30px auto;
     }
-    ${table} {
+    ${tablet} {
         width: 740px;
         min-width: 740px;
         margin: auto;
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         display: none;
     }
 `;
@@ -32,7 +33,6 @@ export const SpanIcon = styled.span`
     font-size: 32px;
 `;
 export const Table = styled.table`
-    font-family: Lato;
     background: #ffffff;
     box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
     border-radius: 8px;
@@ -45,17 +45,16 @@ export const Table = styled.table`
         width: 1060px;
         min-width: 1060px;
     }
-    ${table} {
+    ${tablet} {
         width: 740px;
         min-width: 740px;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         width: 560px;
         min-width: 560px;
     }
 `;
 export const Title = styled.h1`
-    font-family: Lato;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -67,7 +66,7 @@ export const Title = styled.h1`
     letter-spacing: 0.2px;
     height: 43px;
     padding-top: 24px;
-    ${table} {
+    ${tablet} {
         font-size: 16px;
     }
 `;
@@ -84,7 +83,6 @@ export const Thead = styled.th`
 export const Td = styled.td`
     border-bottom: 1px solid #ddd;
     height: 56px;
-    font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -93,4 +91,15 @@ export const Td = styled.td`
     color: #52575c;
     border-collapse: collapse;
     padding: 0px;
+`;
+export const ImgDiv = styled.div`
+    width: 50px;
+    display: flex;
+    float: right;
+`;
+export const Img = styled.img`
+    width: 50px;
+`;
+export const IconWrapper = styled.span`
+    color: #a0a4a8;
 `;

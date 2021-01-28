@@ -4,11 +4,11 @@ import Logo from '../../assets/img/logo.jpg';
 import Header from '../header/index';
 import Navigation from '../navigation/index';
 import * as style from './style';
-
 import Dashboard from '../dashboard/index';
 
 const index = () => {
     const { ImgLogo, LogoDiv, DivHeader, PLogo, NavDiv, DivWrapper } = style;
+
     return (
         <DivWrapper>
             <DivHeader>
@@ -20,9 +20,8 @@ const index = () => {
             <NavDiv>
                 <Navigation />
             </NavDiv>
-            <div>
-                <Dashboard />
-            </div>
+
+            <Dashboard />
         </DivWrapper>
     );
 };

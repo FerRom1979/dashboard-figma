@@ -1,7 +1,6 @@
 import React from 'react';
 import * as style from './style';
 import Logo from '../../assets/img/logo.jpg';
-/* import { Link } from 'react-router-dom'; */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faChartPie,
@@ -13,6 +12,7 @@ import {
     faQuestionCircle,
     faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
+
 const Navigation = () => {
     const {
         DivContainer,
@@ -20,7 +20,7 @@ const Navigation = () => {
         ImgLogo,
         DivNavDashboard,
         SubTitleNav,
-        Divlist,
+        DivList,
         Label,
         DivListNav,
         LabelList,
@@ -30,6 +30,7 @@ const Navigation = () => {
         DivNoneList,
         LabelNoneIcon,
     } = style;
+
     return (
         <DivContainer>
             <LogoDiv>
@@ -37,22 +38,18 @@ const Navigation = () => {
             </LogoDiv>
             <DivNavDashboard>
                 <SubTitleNav>MEDICINE</SubTitleNav>
-                <Divlist>
+                <DivList>
                     <SpanListDash>
                         <FontAwesomeIcon icon={faChartPie} />
                     </SpanListDash>
-                    {/* <Link to="/dashboard"> */}
                     <Label>Dashboard</Label>
-                    {/* </Link> */}
-                </Divlist>
+                </DivList>
             </DivNavDashboard>
             <DivListNav>
                 <SpanListNav>
                     <FontAwesomeIcon icon={faStethoscope} />
                 </SpanListNav>
-                {/* <Link to="/basicTable"> */}
                 <LabelList>Appointments</LabelList>
-                {/* </Link> */}
             </DivListNav>
             <DivListNav>
                 <SpanListNav>

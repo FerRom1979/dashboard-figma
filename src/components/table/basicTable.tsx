@@ -7,13 +7,13 @@ import { COLUMNS, DATA } from './columns';
 import * as style from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPen, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import foto from '../../assets/img/foto.png';
+import photo from '../../assets/img/photo.png';
 
 const BasicTable = () => {
-    const { DivContainer, Table, Title, Thead, Td } = style;
+    const { DivContainer, Table, Title, Thead, Td, ImgDiv, Img, IconWrapper } = style;
     const columns = useMemo(() => COLUMNS, []);
     const data = useMemo(() => DATA, []);
-    const TableIntance = useTable(
+    const TableInstance = useTable(
         {
             columns,
             data,
@@ -23,12 +23,12 @@ const BasicTable = () => {
             hooks.visibleColumns.push((columns) => {
                 return [
                     {
-                        id: 'imgen',
+                        id: 'img',
                         header: 'Name',
                         Cell: () => (
-                            <div style={{ width: '50px', display: 'flex', float: 'right' }}>
-                                <img src={foto} style={{ width: '50px' }} />
-                            </div>
+                            <ImgDiv>
+                                <Img src={photo} alt="photo" />
+                            </ImgDiv>
                         ),
                     },
                     ...columns,
@@ -38,9 +38,9 @@ const BasicTable = () => {
                         header: '',
                         Cell: () => (
                             <div>
-                                <span style={{ color: '#a0a4a8' }}>
+                                <IconWrapper>
                                     <FontAwesomeIcon icon={faPen} />
-                                </span>
+                                </IconWrapper>
                             </div>
                         ),
                     },
@@ -59,7 +59,7 @@ const BasicTable = () => {
             });
         },
     );
-    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = TableIntance;
+    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = TableInstance;
     return (
         <DivContainer>
             <Title>Appointment Activity</Title>

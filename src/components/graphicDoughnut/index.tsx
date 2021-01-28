@@ -28,7 +28,7 @@ const GraphicDoughnut: React.FC<IPropsGraphic> = ({
         ],
     };
     const options = {
-        resposive: true,
+        responsive: true,
         title: {
             display: true,
             text: `${title}`,
@@ -36,11 +36,7 @@ const GraphicDoughnut: React.FC<IPropsGraphic> = ({
         },
     };
 
-    return (
-        <div>
-            <Doughnut data={data} options={options} />
-        </div>
-    );
+    return <Doughnut data={data} options={options} />;
 };
 
 export default GraphicDoughnut;

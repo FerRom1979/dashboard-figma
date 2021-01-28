@@ -4,7 +4,7 @@ import { Line } from 'react-chartjs-2';
 import { IPropsGraphic } from '../../types';
 import * as style from './style';
 
-const SecondaryCrart: React.FC<IPropsGraphic> = ({
+const SecondaryChart: React.FC<IPropsGraphic> = ({
     title,
     legend,
     dataLabel,
@@ -18,7 +18,7 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
             {
                 label: `${legend}`,
                 borderColor: `${borderColor}`,
-                borderWidht: 1,
+                borderWidth: 1,
                 data: dataSet,
             },
         ],
@@ -50,7 +50,7 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
             fontWeight: 'bold',
             fontSize: 20,
             color: 'black',
-            textAling: 'left',
+            textAlign: 'left',
         },
         legend: {
             align: 'end',
@@ -58,15 +58,15 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
             fontWeight: 700,
             fontStyle: 'normal',
             padding: {
-                rigth: 40,
+                right: 40,
             },
             fontSize: 12,
             lineHeight: 16,
             color: '#a0a4a8',
             labels: {
                 boxWidth: 0,
-                paddingRigth: 20,
-                boxHeinght: 1,
+                paddingRight: 20,
+                boxHeight: 1,
             },
         },
         tooltips: {
@@ -74,7 +74,7 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
         },
         elements: {
             line: {
-                borderWidh: 1,
+                borderWidth: 1,
                 padding: 10,
                 fill: false,
             },
@@ -87,4 +87,4 @@ const SecondaryCrart: React.FC<IPropsGraphic> = ({
     );
 };
 
-export default SecondaryCrart;
+export default SecondaryChart;

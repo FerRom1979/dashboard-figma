@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-const desktop = '@media(max-width: 1168px)';
-const table = '@media(max-width: 768px)';
-const tableVertical = '@media(max-width: 600px)';
-const movil = '@media(max-width: 380px)';
+import * as mediaQueris from '../mediaQueris';
+
+const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
 
 export const DivContainer = styled.div`
     width: 1184px;
@@ -15,13 +14,13 @@ export const DivContainer = styled.div`
     ${desktop} {
         width: 900px;
     }
-    ${table} {
+    ${tablet} {
         width: 768px;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         width: 600px;
     }
-    ${movil} {
+    ${mobile} {
         width: 380px;
         width: 100%;
     }
@@ -33,7 +32,6 @@ export const InputSearch = styled.input`
     height: 40px;
     margin-left: 36px;
     color: #a0a4a8;
-    font-family: Lato;
     font-weight: normal;
     font-style: normal;
     background: #ffffff;
@@ -44,51 +42,48 @@ export const InputSearch = styled.input`
     ${desktop} {
         margin-left: 16px;
     }
-    ${table} {
+    ${tablet} {
         margin-left: 0px;
         padding-left: 0px;
         width: 256px;
         min-width: 256px;
     }
 `;
-
 export const ResponsiveDiv = styled.div<{
     display?: string;
-    displayTableVertical?: string;
-    marginLeftTable?: number;
+    displayVerticalTablet?: string;
+    marginLeftTablet?: number;
 }>`
     display: ${({ display }) => `${display}` || ''};
-    ${table} {
-        margin-left: ${({ marginLeftTable }) => `${marginLeftTable}px` || ''};
+    ${tablet} {
+        margin-left: ${({ marginLeftTablet }) => `${marginLeftTablet}px` || ''};
     }
-    ${tableVertical} {
-        display: ${({ displayTableVertical }) => `${displayTableVertical}` || ''};
+    ${verticalTablet} {
+        display: ${({ displayVerticalTablet }) => `${displayVerticalTablet}` || ''};
     }
 `;
-export const UserSpan = styled.span<{
+export const IconWrapper = styled.span<{
     fontSize?: number;
     color?: string;
-    marginRightTable?: number;
+    marginRightTablet?: number;
 }>`
     margin-right: 24px;
     font-size: ${({ fontSize }) => `${fontSize}px` || ''};
     color: ${({ color }) => `${color}` || ''};
-    ${table} {
-        margin-right: ${({ marginRightTable }) => `${marginRightTable}px` || ''};
+    ${tablet} {
+        margin-right: ${({ marginRightTablet }) => `${marginRightTablet}px` || ''};
     }
 `;
-
 export const DivUser = styled.div`
     margin-right: 24px;
     ${desktop} {
         margin-right: 0px;
     }
-    ${table} {
+    ${tablet} {
         margin-left: 10px;
         margin-right: 20px;
     }
-
-    ${movil} {
+    ${mobile} {
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;

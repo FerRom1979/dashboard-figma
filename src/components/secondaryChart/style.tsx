@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-const desktop = '@media(max-width: 1168px)';
-const table = '@media(max-width: 768px)';
-const tableVertical = '@media(max-width: 600px)';
-const movil = '@media(max-width: 380px)';
+import * as mediaQueris from '../mediaQueris';
+
+const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
+
 export const DivContainer = styled.div`
     min-width: 540px;
     min-height: 286px;
@@ -16,16 +16,16 @@ export const DivContainer = styled.div`
         margin-left: 0px;
         width: 500px;
     }
-    ${table} {
+    ${tablet} {
         margin: auto;
         width: 740px;
         margin-bottom: 30px;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         width: 500px;
         min-width: 500px;
     }
-    ${movil} {
+    ${mobile} {
         width: 360px;
         min-width: 360px;
         margin: 20px auto;

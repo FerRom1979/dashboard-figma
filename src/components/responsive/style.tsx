@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-const table = '@media(max-width: 768px)';
-const tableVertical = '@media(max-width: 600px)';
-const movil = '@media(max-width: 380px)';
+import * as mediaQueris from '../mediaQueris';
+
+const { verticalTablet, tablet, mobile } = mediaQueris;
 
 export const DivWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    ${movil} {
+    ${mobile} {
         flex-direction: row;
         justify-content: flex-end;
     }
@@ -16,13 +16,11 @@ export const ImgLogo = styled.img`
     height: 30px;
     border-radius: 50%;
     background-color: #336cfb;
-    ${tableVertical} {
+    ${verticalTablet} {
         display: none;
     }
 `;
-
 export const PLogo = styled.p`
-    font-family: Lato;
     font-weight: bold;
     padding: 10px;
 `;
@@ -37,23 +35,23 @@ export const LogoDiv = styled.div`
     color: #336cfb;
     margin-bottom: 0;
     padding-bottom: 0;
-    ${table} {
+    ${tablet} {
         display: flex;
         align-items: center;
         margin-left: 32px;
     }
-    ${table} {
+    ${tablet} {
         display: none;
     }
 `;
 export const NavDiv = styled.div`
-    ${tableVertical} {
+    ${verticalTablet} {
         display: none;
     }
 `;
 export const DivBurger = styled.div`
     display: none;
-    ${tableVertical} {
+    ${verticalTablet} {
         display: block;
     }
 `;
@@ -61,14 +59,14 @@ export const DivHeader = styled.div`
     display: flex;
     width: 1110px;
     height: 88px;
-    ${table} {
+    ${tablet} {
         width: auto;
     }
-    ${tableVertical} {
+    ${verticalTablet} {
         justify-content: space-around;
         justify-items: center;
     }
-    ${movil} {
+    ${mobile} {
         width: 380px;
     }
 `;

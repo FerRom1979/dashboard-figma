@@ -12,7 +12,7 @@ const GraphicPie = () => {
         ],
     };
     const options = {
-        resposive: true,
+        responsive: true,
         title: {
             display: true,
             text: 'Hospital Survey',
@@ -20,11 +20,7 @@ const GraphicPie = () => {
         },
     };
 
-    return (
-        <div>
-            <Pie data={data} options={options} />
-        </div>
-    );
+    return <Pie data={data} options={options} />;
 };
 
 export default GraphicPie;
