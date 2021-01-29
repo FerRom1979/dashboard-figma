@@ -17,8 +17,8 @@ const Header = () => {
                 </Menu>
             </Responsive>
 
-            <Responsive displayVerticalTablet={'none'} marginLeftTablet={70}>
-                <InputSearch type="text" placeholder="&#128269;    Search" />
+            <Responsive displayMobile={'none'} marginLeftTablet={50}>
+                <InputSearch type="text" placeholder="    &#128269;    Search" />
             </Responsive>
 
             <User>

@@ -70,7 +70,7 @@ export const DivHeader = styled.div`
     ${verticalTablet} {
         justify-content: space-around;
         justify-items: center;
-        width: 500px;
+        width: 600px;
     }
     ${mobile} {
         width: 380px;
