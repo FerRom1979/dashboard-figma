@@ -23,6 +23,8 @@ body{
   height: 100vh;
   text-rendering: optimizeLegibility;
   font-family:Lato;
+  font-weight:bold;
+  font-style:normal;
 }
 `;
 export const DivResponsive = styled.div`

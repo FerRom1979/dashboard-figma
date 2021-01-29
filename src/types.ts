@@ -10,3 +10,6 @@ export interface IPropsGraphic {
     dataSet: any;
     borderColor: string;
 }
+export interface IColumns {
+    COLUMNS: Object[];
+}

@@ -1,15 +1,8 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { IPropsGraphic } from '../../types';
 
-const GraphicDoughnut: React.FC<IPropsGraphic> = ({
-    title,
-    legend,
-    dataLabel,
-    dataSet,
-    borderColor,
-}) => {
+const GraphicDoughnut = ({ title, legend, dataLabel, dataSet, borderColor }: IPropsGraphic) => {
     const data = {
         labels: dataLabel,
         datasets: [

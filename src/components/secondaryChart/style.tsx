@@ -3,13 +3,14 @@ import * as mediaQueris from '../mediaQueris';
 
 const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
 
-export const DivContainer = styled.div`
+export const Container = styled.div`
     min-width: 540px;
     min-height: 286px;
     width: 540px;
     height: 286px;
     margin-left: 36px;
     box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
     background: #ffffff;
     ${desktop} {
         min-width: 500px;

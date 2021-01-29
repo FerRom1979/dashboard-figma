@@ -3,7 +3,7 @@ import * as mediaQueris from '../mediaQueris';
 
 const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
 
-export const DivContainer = styled.div`
+export const Container = styled.div`
     width: 1184px;
     height: 88px;
     min-height: 88px;
@@ -18,11 +18,15 @@ export const DivContainer = styled.div`
         width: 768px;
     }
     ${verticalTablet} {
-        width: 600px;
+        width: 500px;
+        justify-content: flex-end;
     }
     ${mobile} {
-        width: 380px;
+        height: 64px;
+        margin-right: 16px;
         width: 100%;
+        background-color: #ffffff;
+        justify-content: space-between;
     }
 `;
 export const InputSearch = styled.input`
@@ -33,7 +37,6 @@ export const InputSearch = styled.input`
     margin-left: 36px;
     color: #a0a4a8;
     font-weight: normal;
-    font-style: normal;
     background: #ffffff;
     border: none;
     border-radius: 100px;
@@ -49,9 +52,10 @@ export const InputSearch = styled.input`
         min-width: 256px;
     }
 `;
-export const ResponsiveDiv = styled.div<{
+export const Responsive = styled.div<{
     display?: string;
     displayVerticalTablet?: string;
+    displayMobile?: string;
     marginLeftTablet?: number;
 }>`
     display: ${({ display }) => `${display}` || ''};
@@ -61,27 +65,37 @@ export const ResponsiveDiv = styled.div<{
     ${verticalTablet} {
         display: ${({ displayVerticalTablet }) => `${displayVerticalTablet}` || ''};
     }
+    ${mobile} {
+        display: ${({ displayMobile }) => `${displayMobile}` || ''};
+    }
 `;
 export const IconWrapper = styled.span<{
     fontSize?: number;
     color?: string;
     marginRightTablet?: number;
+    transform?: string;
 }>`
     margin-right: 24px;
     font-size: ${({ fontSize }) => `${fontSize}px` || ''};
     color: ${({ color }) => `${color}` || ''};
+    transform: ${({ transform }) => `${transform}` || ''};
     ${tablet} {
         margin-right: ${({ marginRightTablet }) => `${marginRightTablet}px` || ''};
     }
 `;
-export const DivUser = styled.div`
+export const User = styled.div`
     margin-right: 24px;
+    display: flex;
+    align-items: center;
     ${desktop} {
         margin-right: 0px;
     }
     ${tablet} {
         margin-left: 10px;
         margin-right: 20px;
+    }
+    ${verticalTablet} {
+        justify-content: end;
     }
     ${mobile} {
         display: flex;

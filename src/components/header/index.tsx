@@ -7,29 +7,29 @@ import Navigation from '../navigation/index';
 import './styles.css';
 
 const Header = () => {
-    const { ResponsiveDiv, IconWrapper, DivContainer, InputSearch, DivUser } = style;
+    const { Responsive, IconWrapper, Container, InputSearch, User } = style;
 
     return (
-        <DivContainer>
-            <ResponsiveDiv display={'none'} displayVerticalTablet={'block'}>
+        <Container>
+            <Responsive display={'none'} displayMobile={'block'}>
                 <Menu isOpen={false}>
                     <Navigation />
                 </Menu>
-            </ResponsiveDiv>
+            </Responsive>
 
-            <ResponsiveDiv displayVerticalTablet={'none'} marginLeftTablet={70}>
+            <Responsive displayVerticalTablet={'none'} marginLeftTablet={70}>
                 <InputSearch type="text" placeholder="&#128269;    Search" />
-            </ResponsiveDiv>
+            </Responsive>
 
-            <DivUser>
-                <IconWrapper color={'#cacccf'}>
+            <User>
+                <IconWrapper color={'#cacccf'} transform={'rotate(45deg)'}>
                     <FontAwesomeIcon icon={faBell} fontSize={21} />
                 </IconWrapper>
                 <IconWrapper fontSize={40} marginRightTablet={0}>
                     <FontAwesomeIcon icon={faUser} />
                 </IconWrapper>
-            </DivUser>
-        </DivContainer>
+            </User>
+        </Container>
     );
 };
 

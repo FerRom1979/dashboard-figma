@@ -3,7 +3,7 @@ import * as mediaQueris from '../mediaQueris';
 
 const { desktop, tablet, verticalTablet } = mediaQueris;
 
-export const DivContainer = styled.div`
+export const Container = styled.div`
     min-width: 1110px;
     max-height: 410px;
     width: 1110px;
@@ -11,8 +11,10 @@ export const DivContainer = styled.div`
     margin-top: 30px;
     background: #ffffff;
     margin-left: 36px;
+    margin-bottom: 30px;
     box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
-    border-radius: 8px;
+    border-radius: 12px;
+
     ${desktop} {
         width: 1060px;
         min-width: 1060px;
@@ -29,18 +31,16 @@ export const DivContainer = styled.div`
         display: none;
     }
 `;
-export const SpanIcon = styled.span`
-    font-size: 32px;
-`;
 export const Table = styled.table`
     background: #ffffff;
     box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
-    border-radius: 8px;
+    border-radius: 12px;
     min-width: 1110px;
     max-height: 410px;
     width: 100%;
     border-collapse: collapse;
     border: none;
+
     ${desktop} {
         width: 1060px;
         min-width: 1060px;
@@ -56,7 +56,6 @@ export const Table = styled.table`
 `;
 export const Title = styled.h1`
     font-style: normal;
-    font-weight: bold;
     font-size: 20px;
     color: #25282b;
     margin-left: 24px;
@@ -100,6 +99,7 @@ export const ImgDiv = styled.div`
 export const Img = styled.img`
     width: 50px;
 `;
-export const IconWrapper = styled.span`
-    color: #a0a4a8;
+export const IconWrapper = styled.span<{ color?: string; fontSize?: number }>`
+    color: ${({ color }) => `${color}` || ''};
+    font-size: ${({ fontSize }) => `${fontSize}px` || ''};
 `;

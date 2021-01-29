@@ -1,6 +1,5 @@
 import React from 'react';
 import * as style from './style';
-import Logo from '../../assets/img/logo.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faChartPie,
@@ -12,85 +11,87 @@ import {
     faQuestionCircle,
     faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../assets/img/logo.jpg';
 
 const Navigation = () => {
     const {
-        DivContainer,
-        LogoDiv,
+        Container,
+        Logo,
         ImgLogo,
-        DivNavDashboard,
+        NavDashboard,
         SubTitleNav,
-        DivList,
+        List,
         Label,
-        DivListNav,
+        ListNav,
         LabelList,
-        SpanListNav,
-        SpanListDash,
+        IconWrapperListNav,
+        IconWrapperListDash,
         Hr,
         DivNoneList,
-        LabelNoneIcon,
+        IconWrapperNoneIcon,
+        WrapperNameLogo,
     } = style;
 
     return (
-        <DivContainer>
-            <LogoDiv>
-                <ImgLogo src={Logo} alt="logo" /> <span>Healthcare</span>
-            </LogoDiv>
-            <DivNavDashboard>
+        <Container>
+            <Logo>
+                <ImgLogo src={logo} alt="logo" /> <WrapperNameLogo>Healthcare</WrapperNameLogo>
+            </Logo>
+            <NavDashboard>
                 <SubTitleNav>MEDICINE</SubTitleNav>
-                <DivList>
-                    <SpanListDash>
+                <List>
+                    <IconWrapperListDash>
                         <FontAwesomeIcon icon={faChartPie} />
-                    </SpanListDash>
+                    </IconWrapperListDash>
                     <Label>Dashboard</Label>
-                </DivList>
-            </DivNavDashboard>
-            <DivListNav>
-                <SpanListNav>
+                </List>
+            </NavDashboard>
+            <ListNav>
+                <IconWrapperListNav>
                     <FontAwesomeIcon icon={faStethoscope} />
-                </SpanListNav>
+                </IconWrapperListNav>
                 <LabelList>Appointments</LabelList>
-            </DivListNav>
-            <DivListNav>
-                <SpanListNav>
+            </ListNav>
+            <ListNav>
+                <IconWrapperListNav>
                     <FontAwesomeIcon icon={faUserMd} />
-                </SpanListNav>
+                </IconWrapperListNav>
                 <LabelList>Doctors</LabelList>
-            </DivListNav>
-            <DivListNav>
-                <SpanListNav>
+            </ListNav>
+            <ListNav>
+                <IconWrapperListNav>
                     <FontAwesomeIcon icon={faUserNurse} />
-                </SpanListNav>
+                </IconWrapperListNav>
                 <LabelList>Departments</LabelList>
-            </DivListNav>
-            <DivListNav>
-                <SpanListNav>
+            </ListNav>
+            <ListNav>
+                <IconWrapperListNav>
                     <FontAwesomeIcon icon={faWheelchair} />
-                </SpanListNav>
+                </IconWrapperListNav>
                 <LabelList>Patients</LabelList>
-            </DivListNav>
-            <DivListNav>
-                <SpanListNav>
+            </ListNav>
+            <ListNav>
+                <IconWrapperListNav>
                     <FontAwesomeIcon icon={faCreditCard} />
-                </SpanListNav>
+                </IconWrapperListNav>
                 <LabelList>Payments</LabelList>
-            </DivListNav>
+            </ListNav>
             <DivNoneList>
-                <DivListNav>
+                <ListNav>
                     <LabelList>ServicePages</LabelList>
-                    <LabelNoneIcon>
+                    <IconWrapperNoneIcon>
                         <FontAwesomeIcon icon={faChevronDown} />
-                    </LabelNoneIcon>
-                </DivListNav>
+                    </IconWrapperNoneIcon>
+                </ListNav>
             </DivNoneList>
             <Hr />
-            <DivListNav>
-                <SpanListNav>
+            <ListNav>
+                <IconWrapperListNav>
                     <FontAwesomeIcon icon={faQuestionCircle} />
-                </SpanListNav>
+                </IconWrapperListNav>
                 <LabelList>Help</LabelList>
-            </DivListNav>
-        </DivContainer>
+            </ListNav>
+        </Container>
     );
 };
 

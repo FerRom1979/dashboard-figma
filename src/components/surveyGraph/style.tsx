@@ -3,7 +3,7 @@ import * as mediaQueris from '../mediaQueris';
 
 const { desktop, tablet } = mediaQueris;
 
-export const DivContainer = styled.div`
+export const Container = styled.div`
     min-width: 1110px;
     min-height: 374px;
     width: 1110px;
@@ -19,4 +19,7 @@ export const DivContainer = styled.div`
     ${tablet} {
         display: none;
     }
+`;
+export const Wrapper = styled.div`
+    height: 374px;
 `;

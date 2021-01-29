@@ -14,48 +14,43 @@ import {
     faProcedures,
     faUniversity,
 } from '@fortawesome/free-solid-svg-icons';
+import * as data from './data';
 
 const Dashboard = () => {
-    const { ResponsiveDiv, DivContainer, DivCard, DivSecondaryChart } = style;
-    const dataLabel = ['1 July', '8 July', '16 July', '24 July', '31 July'],
-        dataSet = [60000, 70000, 35000, 63000, 42000],
-        title = '$100,000',
-        legend = 'Income in current month',
-        borderColor = '#336cfb',
-        dataLabelTwo = [
-            '25 July',
-            '26 July',
-            '27 July',
-            '28 July',
-            '29 July',
-            '30 July',
-            '31 July',
-        ],
-        dataSetTwo = [62000, 38000, 59000, 41000, 78000, 20000, 53000],
-        titleTwo = '$25,000',
-        legendTwo = 'Income in current week',
-        borderColorTwo = '#fac032';
+    const { Responsive, Container, WrapperCard, WrapperSecondaryChart } = style;
+    const {
+        dataLabel,
+        dataSet,
+        title,
+        legend,
+        borderColor,
+        dataLabelTwo,
+        dataSetTwo,
+        legendTwo,
+        titleTwo,
+        borderColorTwo,
+    } = data;
 
     return (
-        <DivContainer>
-            <ResponsiveDiv displayDesktop={'none'}>
+        <Container>
+            <Responsive displayDesktop={'none'}>
                 <Navigation />
-            </ResponsiveDiv>
+            </Responsive>
             <div>
-                <ResponsiveDiv displayDesktop={'none'}>
+                <Responsive displayDesktop={'none'}>
                     <Header />
-                </ResponsiveDiv>
-                <DivCard>
+                </Responsive>
+                <WrapperCard>
                     <Card title={'Appointments'} people={'213'} logo={faBriefcaseMedical} />
                     <Card title={'New Patients'} people={'104'} logo={faUserInjured} />
                     <Card title={'Operation'} people={'24'} logo={faProcedures} />
                     <Card title={'Hospital Earnings'} people={'$12,74'} logo={faUniversity} />
-                </DivCard>
+                </WrapperCard>
                 <SurveyGraph />
-                <ResponsiveDiv displayTable={'block'} display={'none'} width={100}>
+                <Responsive displayTable={'block'} display={'none'} width={100}>
                     <GraphicPie />
-                </ResponsiveDiv>
-                <DivSecondaryChart>
+                </Responsive>
+                <WrapperSecondaryChart>
                     <SecondaryChart
                         dataLabel={dataLabel}
                         dataSet={dataSet}
@@ -70,8 +65,8 @@ const Dashboard = () => {
                         legend={legendTwo}
                         borderColor={borderColorTwo}
                     />
-                </DivSecondaryChart>
-                <ResponsiveDiv displayTable={'block'} display={'none'}>
+                </WrapperSecondaryChart>
+                <Responsive displayTable={'block'} display={'none'}>
                     <GraphicDoughnut
                         dataLabel={dataLabel}
                         dataSet={dataSet}
@@ -86,10 +81,10 @@ const Dashboard = () => {
                         legend={legendTwo}
                         borderColor={borderColorTwo}
                     />
-                </ResponsiveDiv>
+                </Responsive>
                 <BasicTable />
             </div>
-        </DivContainer>
+        </Container>
     );
 };
 
