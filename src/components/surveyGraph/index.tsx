@@ -3,7 +3,7 @@ import * as style from './style';
 import { Line } from 'react-chartjs-2';
 
 const SurveyGraph = () => {
-    const { DivContainer } = style;
+    const { Container, Wrapper } = style;
     const data = {
         labels: [
             '2020-1',
@@ -94,11 +94,11 @@ const SurveyGraph = () => {
         },
     };
     return (
-        <DivContainer>
-            <div style={{ height: '374px' }}>
+        <Container>
+            <Wrapper>
                 <Line data={data} options={options} />
-            </div>
-        </DivContainer>
+            </Wrapper>
+        </Container>
     );
 };
 

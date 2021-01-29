@@ -1,0 +1,10 @@
+export const dataLabel = ['1 July', '8 July', '16 July', '24 July', '31 July'],
+    dataSet = [60000, 70000, 35000, 63000, 42000],
+    title = '$100,000',
+    legend = 'Income in current month',
+    borderColor = '#336cfb',
+    dataLabelTwo = ['25 July', '26 July', '27 July', '28 July', '29 July', '30 July', '31 July'],
+    dataSetTwo = [62000, 38000, 59000, 41000, 78000, 20000, 53000],
+    titleTwo = '$25,000',
+    legendTwo = 'Income in current week',
+    borderColorTwo = '#fac032';

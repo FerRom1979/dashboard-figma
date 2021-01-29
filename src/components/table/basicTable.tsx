@@ -1,6 +1,7 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable react/display-name */
 /* eslint-disable react/jsx-key */
+
+/* eslint-disable react/display-name */
+
 import React, { useMemo } from 'react';
 import { useTable, useRowSelect } from 'react-table';
 import { COLUMNS, DATA } from './columns';
@@ -10,9 +11,10 @@ import { faPen, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import photo from '../../assets/img/photo.png';
 
 const BasicTable = () => {
-    const { DivContainer, Table, Title, Thead, Td, ImgDiv, Img, IconWrapper } = style;
+    const { Container, Table, Title, Thead, Td, ImgDiv, Img, IconWrapper } = style;
     const columns = useMemo(() => COLUMNS, []);
     const data = useMemo(() => DATA, []);
+
     const TableInstance = useTable(
         {
             columns,
@@ -38,7 +40,7 @@ const BasicTable = () => {
                         header: '',
                         Cell: () => (
                             <div>
-                                <IconWrapper>
+                                <IconWrapper color={'#a0a4a8'}>
                                     <FontAwesomeIcon icon={faPen} />
                                 </IconWrapper>
                             </div>
@@ -49,9 +51,9 @@ const BasicTable = () => {
                         header: '',
                         Cell: () => (
                             <div>
-                                <span style={{ color: '#ff6760' }}>
+                                <IconWrapper color={'#ff6760'}>
                                     <FontAwesomeIcon icon={faTrashAlt} />
-                                </span>
+                                </IconWrapper>
                             </div>
                         ),
                     },
@@ -61,7 +63,7 @@ const BasicTable = () => {
     );
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = TableInstance;
     return (
-        <DivContainer>
+        <Container>
             <Title>Appointment Activity</Title>
             <Table {...getTableProps()}>
                 <thead style={{ border: '1px solid #e8e8e8' }}>
@@ -91,7 +93,7 @@ const BasicTable = () => {
                     })}
                 </tbody>
             </Table>
-        </DivContainer>
+        </Container>
     );
 };
 

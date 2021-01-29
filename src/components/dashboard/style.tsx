@@ -3,7 +3,7 @@ import * as mediaQueris from '../mediaQueris';
 
 const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
 
-export const DivContainer = styled.div`
+export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -12,8 +12,11 @@ export const DivContainer = styled.div`
     ${desktop} {
         flex-direction: column;
     }
+    ${mobile} {
+        background-color: #ffffff;
+    }
 `;
-export const DivCard = styled.div`
+export const WrapperCard = styled.div`
     width: 1110px;
     min-width: 1110px;
     min-height: 88px;
@@ -45,7 +48,7 @@ export const DivCard = styled.div`
         height: 500px;
     }
 `;
-export const DivSecondaryChart = styled.div`
+export const WrapperSecondaryChart = styled.div`
     width: 1184px;
     min-width: 1184px;
     min-height: 286px;
@@ -77,7 +80,7 @@ export const DivSecondaryChart = styled.div`
         display: block;
     }
 `;
-export const ResponsiveDiv = styled.div<{
+export const Responsive = styled.div<{
     display?: string;
     displayDesktop?: string;
     displayTable?: string;

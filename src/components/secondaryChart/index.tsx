@@ -1,17 +1,10 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { IPropsGraphic } from '../../types';
 import * as style from './style';
 
-const SecondaryChart: React.FC<IPropsGraphic> = ({
-    title,
-    legend,
-    dataLabel,
-    dataSet,
-    borderColor,
-}) => {
-    const { DivContainer } = style;
+const SecondaryChart = ({ title, legend, dataLabel, dataSet, borderColor }: IPropsGraphic) => {
+    const { Container } = style;
     const data = {
         labels: dataLabel,
         datasets: [
@@ -65,8 +58,9 @@ const SecondaryChart: React.FC<IPropsGraphic> = ({
             color: '#a0a4a8',
             labels: {
                 boxWidth: 0,
-                paddingRight: 20,
+                /* paddingRight: 20, */
                 boxHeight: 1,
+                padding: 20,
             },
         },
         tooltips: {
@@ -81,9 +75,9 @@ const SecondaryChart: React.FC<IPropsGraphic> = ({
         },
     };
     return (
-        <DivContainer>
+        <Container>
             <Line data={data} options={options} />
-        </DivContainer>
+        </Container>
     );
 };
 

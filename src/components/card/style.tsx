@@ -3,7 +3,7 @@ import * as mediaQueris from '../mediaQueris';
 
 const { desktop, verticalTablet, tablet, mobile } = mediaQueris;
 
-export const DivContainer = styled.div`
+export const Container = styled.div`
     width: 100%;
     min-width: 255px;
     width: 255px;
@@ -37,14 +37,11 @@ export const PCard = styled.p`
     margin-top: 20px;
     margin-bottom: 5px;
     font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
     line-height: 20px;
     letter-spacing: 0.1px;
     color: #25282b;
 `;
 export const PCardNumber = styled.p`
-    font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
@@ -52,12 +49,12 @@ export const PCardNumber = styled.p`
     margin-bottom: 20px;
     margin-top: 5px;
 `;
-export const SpanIcon = styled.span`
+export const IconWrapper = styled.span`
     font-size: 40px;
     color: #336cfb;
-    margin-top: 26.26px;
+    margin-top: 26px;
 `;
-export const DivSectionCard = styled.div<{ marginLeft?: number; marginTop?: number }>`
+export const SectionCard = styled.div<{ marginLeft?: number; marginTop?: number }>`
     margin-left: ${({ marginLeft }) => `${marginLeft}px` || ''};
     margin-top: ${({ marginTop }) => `${marginTop}px` || ''};
 `;
