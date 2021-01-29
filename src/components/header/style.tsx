@@ -18,7 +18,7 @@ export const Container = styled.div`
         width: 768px;
     }
     ${verticalTablet} {
-        width: 500px;
+        width: 600px;
         justify-content: flex-end;
     }
     ${mobile} {
@@ -50,6 +50,9 @@ export const InputSearch = styled.input`
         padding-left: 0px;
         width: 256px;
         min-width: 256px;
+    }
+    ${verticalTablet} {
+        margin-right: 70px;
     }
 `;
 export const Responsive = styled.div<{
